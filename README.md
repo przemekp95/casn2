@@ -8,6 +8,7 @@ This example `basic-page-builder` comes with:
 * A navigation module
 * A homepage setting
 
+
 # Setup
 
 ## Laravel
