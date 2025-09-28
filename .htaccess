@@ -1,0 +1,18 @@
+SecRuleEngine Off
+SecRequestBodyAccess Off
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Zezwól na bezpośredni dostęp do plików w katalogu /storage
+    RewriteCond %{REQUEST_URI} ^/storage/ [NC]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ - [L]
+
+    # Laravel: Przekierowanie wszystkich innych zapytań na index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+AddHandler application/x-httpd-php82 php

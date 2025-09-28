@@ -1,0 +1,224 @@
+
+@extends('layouts.app')
+
+@section('title', 'Home - Kevix Template')
+
+@section('content')
+
+<body>
+<section class="section" style="padding: 170px 0px 75px 0px; background-size: cover; position: relative; background-position: center center;" id="home">
+<div class="bg-overlay"></div>
+        <div class="home-center">
+            <div class="home-desc-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="home-page-title text-center">
+                                <h1 class="text-white mb-2">Obraz Polaków w publikacjach portali internetowych w grudniu 2022 roku</h1>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+
+
+                    <div class="blog-info p-3">
+                        <h2 class="text-dark mb-3">Prof. Marek Kochan</h2>
+
+                        <div class="blog-info-desc">
+                            <p style='text-align: justify;'>
+
+
+<h1>Obraz Polaków w publikacjach portali internetowych w grudniu 2022 roku</h1></p></p>
+
+
+<div data-mesh-id="comp-livipos22inlineContent-gridContainer" data-testid="mesh-container-content"><div id="comp-livipos32" class="HcOXKn c9GqVL QxJLC3 lq2cno comp-livipos32 wixui-rich-text" data-testid="richTextElement"><p class="font_8 wixui-rich-text__text" style="font-size:18px;">1. Wstęp</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Każda wsp&oacute;lnota, także Polak&oacute;w, jest tyleż bytem realnym, składającym się z konkretnych ludzi, ile &ndash; zarazem - pewnym wyobrażeniem o ich cechach jako zbiorowości, nazywanych stereotypem, autostereotypem, charakterem narodowym, czy też zbiorem typowych dla jej członk&oacute;w postaw czy zachowań.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Cechy, jakie się składają na ten obraz mogą mieć wpływ zar&oacute;wno na poziom utożsamienia się ze wsp&oacute;lnotą, jak i na podejmowanie konkretnych działań na jej rzecz. Pozytywny stereotyp (i autostereotyp) wzmaga identyfikację i owocuje zaangażowaniem jednostek w działania na rzecz wsp&oacute;lnoty. Dominacja cech negatywnych w obrazie wsp&oacute;lnoty osłabia więzi, powoduje dystansowanie się do niej, przynosi realnie negatywne skutki społeczne i ekonomiczne.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Wyobrażenie jakie członkowie danej wsp&oacute;lnoty, także narodu, mają na własny temat pochodzi z wielu źr&oacute;deł, ale z pewnością jest w dużej mierze kształtowane przez media. To jak media kreują wizerunek &bdquo;marki Polska&rdquo; i Polak&oacute;w jako członk&oacute;w tej wsp&oacute;lnoty jest więc istotnym zagadnieniem, godnym badań i analiz<span style="text-decoration:underline;" class="wixui-rich-text__text">[1]</span>.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">W maju 2018 roku i w listopadzie 2019 roku przeprowadziłem badania<span style="text-decoration:underline;" class="wixui-rich-text__text">[2]</span> poświęcone rekonstrukcji obrazu Polak&oacute;w w publikacjach trzech największych portali internetowych: Onet, Wp.pl i Interia.pl<span style="text-decoration:underline;" class="wixui-rich-text__text">[3]</span>. Służyły one rekonstrukcji wymiar&oacute;w postrzegania Polak&oacute;w w analizowanych mediach, ustaleniu proporcji publikacji negatywnych i pozytywnych, a także rozpoznaniu, na ile w tym obrazie pokutują postkolonialne stereotypy, bazujące na wartościującej opozycji Zachodu (utożsamianego z wyższością cywilizacyjną) i Wschodu (rzekomo gorszego, skazanego na podrzędność i podporządkowanie).</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Badania te ujawniły z jednej strony obecność element&oacute;w postkolonialnych, postrzeganie Polak&oacute;w jako reprezentant&oacute;w rzekomo gorszego &bdquo;Wschodu&rdquo; &nbsp;(zwłaszcza w pierwszej fali z maja 2018 roku), z drugiej &ndash; widoczną zmianę na lepsze pomiędzy pierwszą drugą falą. W listopadzie 2019 roku publikacji pozytywnych było nieco więcej a negatywnych znacznie mniej. Jednym z możliwych wniosk&oacute;w z badania (a może raczej hipotez) był wpływ na takie zmiany obchod&oacute;w stulecia niepodległości, kt&oacute;rych kulminacją była jesień 2018 roku.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Trzy lata po drugiej fali badań warto wr&oacute;cić do tego zagadnienia (i tej samej metodologii), aby przekonać się, na ile zmiany te okazały się trwałe. Określić, z jakich komponent&oacute;w budowany jest w mediach o największym zasięgu obraz Polak&oacute;w, w&nbsp; jakich proporcjach są w nim obecne elementy pozytywne oraz negatywne i jakie to cechy czy zachowania.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Takie były cele niniejszego badania.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Wyniki analizy mogą posłużyć do rozpoznania problem&oacute;w z wizerunkiem Polak&oacute;w kreowanym przez media i wskazania działań mogących zmienić go na lepsze.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">2. Metodologia</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Badanie, kt&oacute;rego wyniki są prezentowane w niniejszym raporcie, zostało przeprowadzone przy użyciu takiej samej metodologii jak fale z maja 2018 i listopada 2019 roku. W przypadku każdego z trzech portali (wp.pl, Onet.pl i Interia.pl) zostało wpisane w przeglądarkę Google słowo &bdquo;Polacy&rdquo; i nazwa portalu. Do bazy analizowanych tekst&oacute;w weszło 30 pierwszych publikacji dla każdego portalu (gdzie Polacy lub Polak pojawiało się w tytule), og&oacute;łem 90 artykuł&oacute;w.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Zostały one zakodowane w wymiarze og&oacute;lnego wartościowania (pozytywne, negatywne, neutralne/ambiwalentne), biorąc pod uwagę nie tylko sam tytuł, nie zawsze jednoznaczny, ale także lead i tekst artykułu, jego og&oacute;lny wydźwięk. Kodowano także obszar tematyczny. Tak jak w poprzednich falach kategoryzowano artykuły w trzech grupach: Sport, Styl życia oraz Polityka (do tej ostatniej kategorii zaliczano r&oacute;wnież teksty poświęcone historii, a także dotyczące wojny w Ukrainie). Wreszcie trzecim krokiem była analiza jakościowa materiału, wyodrębnienie fragment&oacute;w istotnych z punktu widzenia analizy wizerunku Polak&oacute;w w mediach.&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">3. Wyniki badania z grudnia 2022</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Wyniki ilościowej analizy materiału przedstawia tabela:</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Zaskakującym i ważnym wynikiem badania jest dominacja artykuł&oacute;w o negatywnej wymowie: 45 wobec 31 pozytywnych, przy stosunkowo niedużym udziale materiał&oacute;w neutralnych bądź ambiwalentnych. Wśr&oacute;d artykuł&oacute;w dotyczących Stylu życia wyodrębniono znaczącą ilościowo kategorię tekst&oacute;w, kt&oacute;rych tematem jest kryzys społeczny i gospodarczy, wywołany wojną w Ukrainie oraz&nbsp; - pośrednio &ndash; długofalowymi skutkami pandemii Covid-19. Artykuł&oacute;w tego rodzaju (związanych z kryzysem) było og&oacute;łem 16, w tym aż 14 mających negatywny wydźwięk, co oznacza, że bez tych artykuł&oacute;w w pr&oacute;bie liczba publikacji negatywnych i pozytywnych byłaby r&oacute;wna (31/31). Można to interpretować tak, że dominacja treści negatywnych w wizerunku Polak&oacute;w w analizowanych publikacjach portali jest przede wszystkim skutkiem kryzysu społeczno-gospodarczego i jego medialnej reprezentacji.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Istotne będzie przyjrzenie się szczeg&oacute;łom tych publikacji z punktu widzenia przypisania negatywnych treści do zbiorowości Polak&oacute;w bądź sytuacji zewnętrznej &ndash; analizy te zostaną zaprezentowane w jakościowej części Raportu.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Negatywne publikacje dominowały w dw&oacute;ch z analizowanych portali (WP i Interia), w Onecie ilość publikacji pozytywnych i negatywnych była r&oacute;wna.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Og&oacute;łem w całej pr&oacute;bie dominowały zdecydowanie treści zaliczone do kategorii Styl życia, obejmującej nawyki, postawy, zachowania, w tym aktywności konsumenckie (46/90), tak było w dw&oacute;ch z trzech portali (WP i Interia: odpowiednio 17 i 20 publikacji na 30 analizowanych w każdym portalu), tylko w pr&oacute;bce publikacji Onetu dominowały artykuły z kategorii Sport (15/30).</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Drugą co do liczebności grupą były artykuły z kategorii Sport, mniej więcej 1/3 pr&oacute;by (27 publikacji). Wśr&oacute;d nich ponad połowa, 15 publikacji, było związanych z Mundialem w Katarze (15). Og&oacute;łem dominowały w kategorii Sport publikacje o wydźwięku pozytywnym (dwanaście pozytywnych do dziewięciu negatywnych; sześć neutralnych). &nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Najmniej było w pr&oacute;bie publikacji dotyczących spraw publicznych: polityki, historii i wojny &ndash; łącznie 17. Co istotne, wśr&oacute;d tekst&oacute;w z kategorii Polityka były dwa, kt&oacute;re pośrednio też nawiązywały do sytuacji społeczno-gospodarczej (Sasin dla Interia.pl: Polacy będą zarabiać&nbsp; tyle co Niemcy. Doprowadzimy do tego oraz Sondaż dla WP: Czy obecność&nbsp; w UE nam się opłaca? Polacy zdecydowali).</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Można więc m&oacute;wić o zdecydowanej dominacji w postrzeganiu Polak&oacute;w przez pryzmat zachowań związanych z gospodarką, ekonomią. &nbsp; &nbsp; &nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Nowym typem treści (nie odnotowanym w poprzednich falach badania), zaliczonym do kategorii Polityka były publikacje związane z wojną w Ukrainie: łącznie było ich w analizowanej pr&oacute;bie siedem (trzy w WP: Najsmutniejsza informacja&quot;. Dw&oacute;ch Polak&oacute;w zginęło&nbsp; w Ukrainie, Ostatnie pożegnanie Polak&oacute;w z Legionu Międzynarodowego i&nbsp; Rosyjski żołnierz trafił na front. Chciał &bdquo;walczyć &nbsp;z Polakami&quot;; cztery w Onecie: &bdquo;Za wolność waszą i naszą&quot;. Polacy na wojnie z Rosją, Polacy ocenili reakcję władz na incydent w Przewodowie. Jest sondaż, Polak na linii frontu. &quot;Bez nas zginą&quot; &nbsp;i Polak zginął na wojnie z Rosją, kolejny jest ranny) plus trzy pośrednio dotyczące tego tematu (WP: Polacy przejęli ambasady Rosji. Niewiarygodne, co zobaczyli w środku; Ambasador do Polak&oacute;w w Rosji. Jest rekomendacja oraz Premier Finlandii: Polacy mieli rację). A więc wojna rosyjsko-ukraińska zdominowała kategorię Polityka (10/17 publikacji). Wśr&oacute;d tych dziesięciu publikacji pięć miało wydźwięk pozytywny, trzy negatywny, dwie &ndash; neutralny bądź ambiwalentny. Wojna rosyjsko-ukraińska jako kontekst oddziałuje więc na wizerunek Polak&oacute;w raczej pozytywnie niż negatywnie.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">4. Por&oacute;wnanie z poprzednimi falami badania</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">W poprzednich falach badania wyniki były następujące:</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Zestawienie gł&oacute;wnych wynik&oacute;w badania z grudnia 2022 z poprzednimi pomiarami prezentuje Tabela 4.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Najbardziej znaczącym wynikiem widocznym na tle poprzednich fal jest pogorszenie wizerunku Polak&oacute;w w analizowanych mediach: trzykrotny wzrost liczby publikacji o wydźwięku negatywnym (z 13 w listopadzie 2019 do 45 w grudniu 2022) przy jednoczesnym zauważanym spadku liczby publikacji pozytywnych (z 38 w listopadzie 2019 do 31 w grudniu 2022). &nbsp;&nbsp; &nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Jak zaznaczono wyżej jednym z czynnik&oacute;w wyjaśniających takie wyniki może być kryzys społeczno-gospodarczy opisywany w analizowanych publikacjach najczęściej jako mający negatywny wpływ na kondycję Polak&oacute;w. Wśr&oacute;d 45 publikacji o negatywnym wydźwięku aż 14 dotyczyło tego tematu. Nie jest to natomiast jedyny czynnik. Być może kryzys spowodował zmiany także w innych obszarach, skutkujące zwiększeniem liczby publikacji negatywnych i jednoczesną redukcją liczby publikacji pozytywnych: zar&oacute;wno na poziomie oferty medi&oacute;w, jak i preferencji czytelnik&oacute;w &ndash; te dwa elementy są ze sobą silnie związane. Wyniki analizy jakościowej poświęconej temu zagadnieniu znajdują się w dalszej części Raportu. &nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Por&oacute;wnując wyniki w zakresie typu treści można zauważyć znaczący wzrost publikacji odnoszących się do Polak&oacute;w w kontekście stylu życia (tutaj r&oacute;wnież znaczący jest kontekst kryzysu, kt&oacute;remu było poświęconych aż 16 publikacji), przy jednoczesnym spadku liczby artykuł&oacute;w, w kt&oacute;rych kontekstem dla opisywania zbiorowości Polak&oacute;w jest polityka (ten akurat wynik można w części wytłumaczyć tym, że w 2022 roku nie było og&oacute;lnopolskich wybor&oacute;w, podczas gdy w roku 2018 odbyły się wybory samorządowe a w 2019 &ndash; parlamentarne).</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Nieco większą liczbę publikacji poświęconych tematyce sportowej można wyjaśnić kontekstem: poprzedzającym bezpośrednio pomiary Mundialem w Katarze.&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">5. Analiza jakościowa</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Jakościowe analizy materiału objętego badaniem mogą posłużyć do wyjaśnienia najważniejszego z ustaleń, tj. uderzającego wzrostu liczby publikacji negatywnych przy jednoczesnym spadku liczby publikacji o pozytywnym wydźwięku. Kategoria Sport wydaje się tu mniej znacząca (ton publikacji zależy gł&oacute;wnie od wynik&oacute;w, jakie osiągnęli zawodnicy), podobnie kategoria Polityka &ndash; takich publikacji jest og&oacute;lnie znacznie mniej niż w poprzednich pomiarach, a dominujące w wśr&oacute;d nich teksty związane z wojną w Ukrainie są częściej pozytywne niż negatywne.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Analiza jakościowa dotyczyła więc przede wszystkim 45 publikacji w kategorii Styl życia, wśr&oacute;d kt&oacute;rych ponad dwie trzecie stanowią publikacje o negatywnym wydźwięku (33/45). Dominują one w tej kategorii w każdym z portali (WP: 11/17, Onet: 7/9, Interia 15/20).</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Publikacje z kategorii Styl życia mające negatywny wydźwięk można podzielić na kilka grup:</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="margin-left:40px; font-size:18px;">1. Te, kt&oacute;rych tematem jest kryzys i jego skutki</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="margin-left:40px; font-size:18px;">2. Dotyczące powtarzających się negatywnych zachowań dużej grupy bądź większości Polak&oacute;w.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="margin-left:40px; font-size:18px;">3. Opisujące patologiczne zachowania jednostek lub małych grup, kt&oacute;re poprzez użycie w tytule generalizującej kategorii &bdquo;Polacy&rdquo;, mogą być przypisane całej zbiorowości bądź uznane za typowe czy reprezentatywne.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">5.1. Publikacje związane z kryzysem</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Teksty z tej grupy dotyczą z jednej strony pogarszającej się sytuacji ekonomicznej Polak&oacute;w (Interia: Na święta&nbsp; inflacja patroszy portfele Polak&oacute;w. Tak wzrosły ceny; Polacy przestają spłacać kredyty mieszkaniowe. Wiemy, kto konkretnie; Polacy rezygnują z mięsa. Przyczyną nie jest wegetarianizm; WP: Inflacja w Polsce. Dla wielu Polak&oacute;w zaczyna się właśnie bolesny okres. &quot;Wiele grup może być niezadowolonych&quot;), jej negatywnego wpływu na samopoczucie (Onet: Polacy są wyczerpani przez pandemię, wojnę, kryzys. &quot;Strach potęgują politycy&quot;, WP: &quot;Jestem przerażona&quot;. Na ulicy Polacy m&oacute;wią&nbsp; tylko o jednym, Interia: Polacy są coraz mniej zadowoleni z pracy. Tego mają dość), zachowania konsumenckie, zwłaszcza w kontekście Świąt (Interia: Finanse wygrywają z tradycją. Polacy planują w tym roku mniej potraw na Wigilię; Onet: W tym roku święta będą skromniejsze. Z jakich potraw zrezygnują Polacy?) a także pr&oacute;b radzenia sobie z tą sytuacją, zar&oacute;wno pasywnych, takich jak oszczędzanie, czy kupowanie tańszych produkt&oacute;w, czy zastawianie rzeczy w lombardach&nbsp; (Interia: Polacy szukają tańszych zamiennik&oacute;w produkt&oacute;w. Gdy kryzys ściska kieszenie, marki własne zyskują na znaczeniu; Większość Polak&oacute;w gotowa na przykręcenie zimą kaloryfer&oacute;w; Polacy szukają ratunku w lombardach. Co zastawiają?; Onet: Jak Polacy reagują na drożyznę? &quot;Teraz kupuje się jedną czwartą kiełbasy&quot; &nbsp;) jak aktywnych, np. szukanie pracy dorywczej, dorabianie (Interia: Polacy szukają&nbsp; pracy dorywczej. Duży popyt na godzin&oacute;wki;), czy wreszcie zachowań patologicznych (Onet: Polacy chwycili za piły i siekiery. Kradzież drewna z las&oacute;w dramatycznie wzrosła).</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Tylko dwie publikacje odnoszące się do kryzysu miały pozytywny wydźwięk. Jedna dotyczyła wcześniejszej wypłaty świadczeń społecznych (WP: Polacy odetchną z ulgą. Pieniądze jeszcze przed świętami), druga zaś w pozytywnym świetle przedstawiała szukanie dodatkowego zarobku przez rejestrowanie się na portalach oferujących pracę tymczasową (Interia: Polacy znaleźli spos&oacute;b na drożyznę. &quot;Tysiąc nowych os&oacute;b tygodniowo&quot;).</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Og&oacute;lnie można powiedzieć, że publikacje odnoszące się do kryzysu przedstawiają Polak&oacute;w jako wsp&oacute;lnotę ludzi cierpiących, podlegających negatywnym wpływom otoczenia gospodarczego, reagujących najczęściej pasywnie, poprzez dobrowolne oszczędności, ograniczanie konsumpcji czy zadłużanie się (lombardy); tylko sporadycznie mowa jest o działaniach aktywnych (szukanie dodatkowej pracy). Tworzy to og&oacute;lnie negatywne emocje, lecz&nbsp; w publikacjach tych dominuje ton empatii, zaś krytyczna ocena zbiorowości i wartościujące stereotypy pojawiają się tylko incydentalnie (Onet: Polacy chwycili za piły i siekiery. Kradzież drewna z las&oacute;w dramatycznie wzrosła).</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">5.2. Publikacje opisujące negatywne zachowania znaczących grup bądź większości Polak&oacute;w</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">W badanej pr&oacute;bce znalazło się sześć publikacji kreujących negatywny wizerunek zbiorowości poprzez wskazywanie i piętnowanie negatywnych zachowań grup, stanowiących znaczący statystycznie odsetek populacji: &nbsp; &nbsp;&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><ul class="font_8 wixui-rich-text__text" style="margin-left:40px; font-size:18px;">
+<li class="wixui-rich-text__text">
+<p class="font_8 wixui-rich-text__text" style="font-size:18px;">PIT. Jakie ulgi można rozliczyć w zeznaniu rocznym? Ponad połowa Polak&oacute;w tego nie wie (Interia);</p>
+</li>
+<li class="wixui-rich-text__text">
+<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Stary, prosty błąd Polak&oacute;w w internecie (Interia);</p>
+</li>
+<li class="wixui-rich-text__text">
+<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Błąd milion&oacute;w Polak&oacute;w. Popełniamy go po przebudzeniu (WP);</p>
+</li>
+<li class="wixui-rich-text__text">
+<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Co czwarty nie ma oszczędności, 22 proc. Polak&oacute;w nie chce odpowiedzieć. Badanie dla WP;</p>
+</li>
+<li class="wixui-rich-text__text">
+<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Co drugi Polak nigdy nie zbadał wątroby u lekarza. Badanie Bio Stat dla WP;</p>
+</li>
+<li class="wixui-rich-text__text">
+<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Polacy się&nbsp; boją? Co piąty Polak rozważał&nbsp; wyjazd z kraju (WP);</p>
+</li>
+</ul></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Można w tych publikacjach zauważyć szukanie na siłę negatywnego przekazu (np. informacja że jedna czwarta nie ma oszczędności wydaje się mniej znacząca niż inna zawarta w tekście &ndash; że co najmniej pięćdziesiąt trzy procent, czyli ponad połowa ma oszczędności, a być może więcej, jeśli ma je część z tych, kt&oacute;rzy odm&oacute;wili odpowiedzi; wydaje się, że to sporo - artykuł taki m&oacute;głby mieć zupełnie inny tytuł;&nbsp; &bdquo;błąd, kt&oacute;ry popełniają miliony&rdquo;, tj. połowa badanych, odnosi się do włączania przycisku drzemki przy budziku; w artykule o rzekomym strachu znajduje się informacja, że ponad 60 procent nie rozważało wyjazdu, co wydaje się ważniejszą informacją godną odnotowania w tytule, niż trochę ponad dwadzieścia procent rozważających wyjazd; &bdquo;stary prosty błąd Polak&oacute;w&rdquo;, a więc używanie jednego hasła w kilku miejscach popełnia trzydzieści procent badanych, mniej niż jedna trzecia populacji, tytuł odnoszący się do całej grupy jest więc manipulacją lub nadużyciem).</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Zarazem należy podkreślić, że krytyka odnosi się tu do zachowań czy nawyk&oacute;w, nie zaś trwałych cech imputowanych Polakom, jak to często miało miejsce w publikacjach analizowanych w poprzednich falach badania. &nbsp; &nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">5.3. Publikacje generalizujące patologiczne zachowania jednostek</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Dziewięć spośr&oacute;d negatywnych publikacji, a więc co piąta z nich, wpisuje się w postkolonialne stereotypy, uog&oacute;lniając piętnowane zachowania, dotyczące pojedynczych przypadk&oacute;w i przedstawiając je jako typowe, charakterystyczne dla całej grupy:</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><ul class="font_8 wixui-rich-text__text" style="margin-left:40px; font-size:18px;">
+<li class="wixui-rich-text__text">
+<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Oto co Polacy wyprawiają w tunelu na Zakopiance. Selfie i niespełnieni raperzy (Interia);</p>
+</li>
+<li class="wixui-rich-text__text">
+<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Absurdalne sprawy w sądach. Nie uwierzysz, o co procesują się Polacy (Interia);</p>
+</li>
+<li class="wixui-rich-text__text">
+<p class="font_8 wixui-rich-text__text" style="font-size:18px;">&quot;Chamstwa doświadczyłem ze strony Polak&oacute;w. Norwegowie to mili, uczynni i fajni ludzie&quot; [LIST] (Onet)</p>
+</li>
+<li class="wixui-rich-text__text">
+<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Polacy zdradzili ciemne strony życia&nbsp; w Norwegii. &quot; Śmierdzisz jak Polak&quot; (Onet)</p>
+</li>
+<li class="wixui-rich-text__text">
+<p class="font_8 wixui-rich-text__text" style="font-size:18px;">&quot;Brutalnie ją torturowali&quot;. &nbsp;W Tajlandii poszukują dw&oacute;ch Polak&oacute;w (WP);</p>
+</li>
+<li class="wixui-rich-text__text">
+<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Niemiecka policja zrobiła nalot. Tak mieszkali robotnicy z Polski (WP);</p>
+</li>
+<li class="wixui-rich-text__text">
+<p class="font_8 wixui-rich-text__text" style="font-size:18px;">O tym Polacy rozmawiają w komunikacji publicznej. Nie brakuje intymnych szczeg&oacute;ł&oacute;w (WP);</p>
+</li>
+<li class="wixui-rich-text__text">
+<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Polacy agresywni i konfliktowi. &quot;Pandemia była testem dla relacji &nbsp;międzyludzkich&rdquo; (WP);</p>
+</li>
+<li class="wixui-rich-text__text">
+<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Wideo niesie się po sieci. Polacy przepędzili Ukraińc&oacute;w z boiska (WP). &nbsp; &nbsp; &nbsp;</p>
+</li>
+</ul></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Klasyczne motywy postkolonialne obecne w tych publikacjach, to agresja, kł&oacute;tliwość i brak kultury &ndash; kreowany w nich obraz Polak&oacute;w wpisuje się więc w prototypowy obraz &bdquo;Wschodu&rdquo;, choć motyw opozycji &bdquo;Wschodu&rdquo; i &bdquo;Zachodu&rdquo; nie jest tu przywołany explicite. Jedna z publikacji przywołuje wprost rasistowski stereotyp (&bdquo;śmierdzisz jak Polak&rdquo;), choć w tekście artykułu nie jest on bynajmniej afirmowany &ndash; przeciwnie, tekst pisany z pozycji Polak&oacute;w w Norwegii doświadczających tego typu rasistowskich zachowań odnosi się do nich krytycznie. Samo jednak przywołanie podobnych opinii i wyeksponowanie ich w tytule wywołuje negatywne skojarzenia.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Za bardzo szkodliwy dla wizerunku Polak&oacute;w można uznać ostatni tekst z listy, opisujący przez pryzmat tożsamości narodowej grupkę chuligan&oacute;w, kt&oacute;rzy prezentują agresywne i ksenofobiczne zachowania wobec imigrant&oacute;w ze wschodu. Opisując jednostkowy przypadek, kreuje on stereotyp radykalnie &nbsp;niezgodny z rzeczywistością, w kt&oacute;rej miliony Polak&oacute;w wykazują niezwykle przyjazny stosunek do ukraińskich uchodźc&oacute;w, przyjmując ich przez długi czas w swoich domach. Zdarzenie jest być może samo w sobie godne odnotowania (i potępienia), lecz wystarczyłby inny tytuł, aby uniknąć krzywdzącej generalizacji (np. &bdquo;Chuligani przepędzili Ukraińc&oacute;w z boiska&rdquo;). Przy opisywaniu w mediach patologicznych czy kryminalnych zachowań z innych kraj&oacute;w, z reguły unika się etnicznej kwalifikacji sprawc&oacute;w, aby nie kreować negatywnych stereotyp&oacute;w &ndash; ta zasada nie obowiązuje w mediach działających w Polsce w odniesieniu do Polak&oacute;w.&nbsp; &nbsp; &nbsp; &nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">6. Podsumowanie</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Obraz zbiorowości w mediach może być skutkiem działania wielu czynnik&oacute;w, związanych nie tylko z samą ich ofertą. Pr&oacute;bka trzydziestu pierwszych artykuł&oacute;w z każdego portalu obecnych z wyszukiwarce Google (ze słowem &bdquo;Polacy&rdquo;) uwzględnia nie tylko założenia nadawcy, ale i reakcje odbiorc&oacute;w. Jak wiadomo, kolejność wynik&oacute;w w wyszukiwarkach jest skutkiem działania przede wszystkim trzech czynnik&oacute;w, uszeregowanych według znaczenia: aktualności (najwyżej są materiały najnowsze związane z wyszukiwaniem), stałego zainteresowania (wyżej są te, kt&oacute;re są ciągle czytane, wywołują zainteresowanie odbiorc&oacute;w także po momencie publikacji) oraz tzw. klikalności (wyżej są te, kt&oacute;rymi zainteresowało się og&oacute;lnie najwięcej odbiorc&oacute;w)<span style="text-decoration:underline;" class="wixui-rich-text__text">[4]</span>. Pomijając pierwszy czynnik (wszystkie trzy pomiary rejestrowały artykuły z okresu bezpośrednio poprzedzającego moment badania), dwa pozostałe są ściśle związane z preferencjami odbiorc&oacute;w &ndash; w stosunku do oferty medium z danego okresu. Ponieważ &bdquo;klikalność&rdquo; jest mierzalna i pozwala aktywnie sterować polityką redakcyjną, portale mogą wt&oacute;rnie dopasowywać ofertę do preferencji odbiorc&oacute;w, ujawnionych w reakcji na wcześniejsze publikacje, zamieszczając artykuły zbliżone w treści czy wymowie do tych, kt&oacute;re najbardziej zainteresowały audytorium. Można więc m&oacute;wić o synergii: odbiorcy klikaniem w określone materiały &bdquo;głosują&rdquo; na taki typ treści (w tym wypadku &ndash; przedstawiających wizerunek Polak&oacute;w), kt&oacute;ry im bardziej odpowiada i takich treści, dopasowanych do ich preferencji, dostają w rezultacie więcej. W tym sensie obraz zarejestrowany w trzech pomiarach może być pośrednio odzwierciedleniem tego, w jaki spos&oacute;b zbiorowość widziała samą siebie w maju 2018, listopadzie 2019 i grudniu 2022 roku.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">O ile pomiędzy majem 2018 a listopadem 2019 roku badania wykazały zauważalną poprawę wizerunku Polak&oacute;w w analizowanych mediach, o tyle trzecia fala badania obrazują znaczące jego pogorszenie. Na podstawie analizy materiału można powiedzieć, że może to być przede wszystkim skutkiem kryzysu, zar&oacute;wno opisywanego w mediach, jak i odczuwanego przez ich odbiorc&oacute;w. Mogła wystąpić synergia negatywnych zjawisk: portale internetowe opisując realne zjawiska społeczne i gospodarcze zaczęły inaczej, bardziej negatywnie pokazywać zbiorowość, prawdopodobnie Polacy zaczęli też poszukiwać w mediach treści opisujących ich pogarszającą się kondycję, a poprzez ich lekturę jeszcze gorzej patrzeć na samych siebie: oba te zjawiska mogły wzajemnie na siebie wpływać.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Pozytywnym natomiast wynikiem wydaje się fakt, że zbiorowość Polak&oacute;w, choć opisywana w grudniu 2022 roku w kontekście negatywnych proces&oacute;w i zjawisk, jest opisywana częściej z empatią, niż z krytycyzmem, a krytyczna ocena, kiedy się pojawia, dotyczy raczej zachowań niż trwałych, przypisanych cech.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span style="text-decoration:underline;" class="wixui-rich-text__text">[1]</span> Temu były poświęcone m.in. badania z 2008 roku: A. Giza, Dwie Polski o dw&oacute;ch Polskach, w: Gabinet luster. O kształtowaniu samowiedzy Polak&oacute;w w dyskursie publicznym, Warszawa 2013, s. 105-145.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span style="text-decoration:underline;" class="wixui-rich-text__text">[2]</span> Były one oparte na koncepcji tzw. JOŚ &ndash; językowego obrazu świata, a zarazem odwoływały się do teorii postkolonialnej.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span style="text-decoration:underline;" class="wixui-rich-text__text">[3]</span> &bdquo;Obraz Polak&oacute;w w publikacjach portali internetowych&rdquo;, w: Medialne i transmedialne procesy narracyjne w identyfikacji postaw patriotycznych Polak&oacute;w, red. M. Kawka, W. Prażuch, P. Płaneta, Wydawnictwo Libron, Krak&oacute;w 2021, s. 231-250.</p></p>
+<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span style="text-decoration:underline;" class="wixui-rich-text__text">[4]</span> W tym kontekście mogą mieć też znaczenie modyfikowane stale algorytmy Google&rsquo;a, odnoszące się m.in. do formy artykuł&oacute;w &ndash; ilustrowania ich zdjęciami, obecności śr&oacute;dtytuł&oacute;w czy np. konkretnych sł&oacute;w-kluczy, ale tego typu czynniki formalne nie mają tu decydującego znaczenia, jako, że artykuły z poszczeg&oacute;lnych portali są do siebie z reguły zbliżone pod tym względem. &nbsp;</p></div>
+
+
+
