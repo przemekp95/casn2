@@ -60,15 +60,11 @@ return [
     */
 
     'providers' => [
-        'users' => [
-            'driver' => 'eloquent',
-            'model' => env('AUTH_MODEL', App\Models\User::class),
-        ],
-
-         'users' => [
-             'driver' => 'database',
-             'table' => 'twill_users',
-         ],
+        // Authentication disabled - using static content only
+        // 'users' => [
+        //     'driver' => 'eloquent',
+        //     'model' => env('AUTH_MODEL', App\Models\User::class),
+        // ],
     ],
 
     /*
