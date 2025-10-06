@@ -76,7 +76,7 @@ a {
 
 .bg-overlay {
     background-color: #000;
-    opacity: 0.5;
+    opacity: 0.05;
     position: absolute;
     top: 0;
     left: 0;

@@ -1,276 +1,116 @@
-
 @extends('layouts.app')
 
-@section('title', 'Home - Kevix Template')
+@section('title', 'Wpływ nowelizacji dyrektywy w sprawie efektywności energetycznej (EPBD) na sytuację społeczno-gospodarczą w Polsce')
 
 @section('content')
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <article class="article-content">
+                <header class="mb-4">
+                    <h1 class="display-4 mb-3">Wpływ nowelizacji dyrektywy w sprawie efektywności energetycznej (EPBD) na sytuację społeczno-gospodarczą w Polsce</h1>
 
-<body>
-<section class="section" style="padding: 170px 0px 75px 0px; background-size: cover; position: relative; background-position: center center;" id="home">
-<div class="bg-overlay"></div>
-        <div class="home-center">
-            <div class="home-desc-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="home-page-title text-center">
-                                <h1 class="text-white mb-2">Wpływ nowelizacji dyrektywy w sprawie efektywności energetycznej (EPBD) na sytuację społeczno-gospodarczą w Polsce </h1>
-                                
+                    <div class="article-meta mb-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="{{ asset('images/Kochman.png') }}" alt="Adw. Oskar Kochman"
+                                 class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                            <div>
+                                <h5 class="mb-0">Adw. Oskar Kochman</h5>
+                                <small class="text-muted">Autor artykułu</small>
+                            </div>
+                        </div>
+
+                        <div class="article-info">
+                            <span class="badge bg-primary me-2">Analiza</span>
+                            <span class="badge bg-secondary">CASN</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="article-body">
+                    <div class="content-section mb-5">
+                        <h2>Treść analizy</h2>
+                        <div class="article-text">
+                            <h3>Wprowadzenie</h3>
+                            <p>Nowelizacja dyrektywy w sprawie efektywności energetycznej (EPBD) wprowadza daleko idące zmiany w polskim sektorze budowlanym i energetycznym. Analiza skupia się na konsekwencjach społeczno-gospodarczych tych regulacji dla Polski.</p>
+
+                            <p>Badanie wykazuje, że nowe wymagania dotyczące efektywności energetycznej budynków będą miały znaczący wpływ na rynek nieruchomości, koszty budowy oraz konkurencyjność polskich przedsiębiorstw w sektorze budowlanym.</p>
+
+                            <h3>Analiza wpływu na sektor budowlany</h3>
+                            <p>Nowe standardy energetyczne wpłyną na wzrost kosztów budowy nowych budynków, co może ograniczyć dostępność mieszkań dla mniej zamożnych obywateli. Z drugiej strony, poprawa efektywności energetycznej przyczyni się do obniżenia kosztów eksploatacji budynków w dłuższej perspektywie.</p>
+
+                            <h3>Wpływ na gospodarkę</h3>
+                            <p>Zmiany te stworzą nowe możliwości dla polskiego przemysłu budowlanego w zakresie produkcji materiałów i technologii energooszczędnych. Polskie firmy będą musiały dostosować się do nowych standardów, co może zwiększyć ich konkurencyjność na rynku europejskim.</p>
+
+                            <h3>Rekomendacje</h3>
+                            <p>Niezbędne jest opracowanie programów wsparcia dla sektora budowlanego oraz kampanii informacyjnych dla społeczeństwa na temat korzyści płynących z efektywności energetycznej.</p>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h3>Informacje o autorze</h3>
+                        <div class="author-bio p-4 bg-light rounded">
+                            <div class="d-flex align-items-start">
+                                <img src="{{ asset('images/Kochman.png') }}" alt="Adw. Oskar Kochman"
+                                     class="rounded-circle me-3" style="width: 80px; height: 80px; object-fit: cover;">
+                                <div>
+                                    <h5>Adw. Oskar Kochman</h5>
+                                    <p class="mb-2">Absolwent Wydziału Prawa i Administracji Uniwersytetu Warszawskiego.</p>
+                                    <a href="{{ url('/kochman') }}" class="btn btn-outline-primary btn-sm">
+                                        Zobacz wszystkie artykuły autora
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
-    </section>
+    </div>
+</div>
 
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9">
+<style>
+.article-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
 
+.article-meta {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 1.5rem;
+}
 
-                    <div class="blog-info p-3">
-                        <h2 class="text-dark mb-3">Oskar Kochman</h2>
+.article-info .badge {
+    font-size: 0.8rem;
+}
 
-                        <div class="blog-info-desc">
-                            <p style='text-align: justify;'>
+.content-section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
 
+.content-section h3 {
+    color: #34495e;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
 
-<span style="font-weight:bold;" class="wixui-rich-text__text">Wpływ nowelizacji dyrektywy w sprawie efektywności energetycznej (EPBD) na sytuację społeczno-gospodarczą w Polsce </span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Przez efektywność energetyczną budynku należy rozumieć stopień przygotowania budynku do zapewnienia komfortu jego użytkowania zgodnie z przeznaczeniem przy jednoczesnym możliwie najniższym zużyciu energii przez ten budynek.&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Przepisy regulujące efektywność energetyczną obowiązywały w polskim prawie budowlanym od kilkudziesięciu lat i były związane z akcesja do UE. Zagadnienie to jest przedmiotem regulacji prawodawcy unijnego, co oznacza, że od chwili wejścia Polski do UE do polskiego porządku prawnego transponowane są kolejne dyrektywy unijne w tym zakresie. Początkowo, gł&oacute;wnym motywem wsp&oacute;lnotowych regulacji efektywności energetycznej było osiąganie korzyści finansowych wynikających ze zmniejszonego zapotrzebowania na energię lub ograniczania jej koszt&oacute;w, a cele klimatyczne wskazywano w drugiej kolejności[1]. &nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Aktualnie, regulacja efektywność energetyczna został podporządkowana w zasadzie wyłącznie celom klimatycznym UE wyznaczonym przez Europejski Zielony Ład, pakiet &bdquo;Fit for 55&rdquo; oraz REPowerEU, kt&oacute;rych celem jest ograniczenie emisji w UE o co najmniej 55% do 2030 roku, a następnie osiągnięcie neutralności klimatycznej do 2050 roku. Zgodnie z szacunkami UE budynki odpowiadają za 40 % zużycia energii końcowej w Unii i za 36 % jej emisji gaz&oacute;w cieplarnianych związanych z energią, a jednocześnie 75 % budynk&oacute;w w Unii jest nadal nieefektywnych energetycznie. Gaz ziemny odgrywa największą rolę w ogrzewaniu budynk&oacute;w, odpowiadając za około 42 % energii wykorzystywanej do ogrzewania pomieszczeń w sektorze mieszkaniowym. Ropa naftowa jest drugim co do ważności paliwem kopalnym do cel&oacute;w grzewczych (14 %), natomiast węgiel odpowiada za około 3 %.</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Projektowane w Unii Europejskiej zmiany prawa mogą oznaczać dla Polski konieczność przeprowadzenia do 2050 r. ok. 7,5 mln inwestycji termomodernizacyjnych, przy czym 4,7 mln budynk&oacute;w zostanie poddane głębokiej termomodernizacji. Biorąc pod uwagę r&oacute;wnolegle deficyt dom&oacute;w i mieszkań, prowadzi to do sytuacji, w kt&oacute;rej ostateczny kształt nowelizacji dyrektywy EPBD będzie miał kluczowy wpływ na sytuację społeczno-gospodarczą w Polsce w najbliższych kilkudziesięciu latach. Niestety debata publiczna prowadzona jest gł&oacute;wnie przez beneficjent&oacute;w projektowanych zmian co wpływa na brak krytycznej analizy skutk&oacute;w nowelizacji dyrektywy EPBD.</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span style="font-weight:bold;" class="wixui-rich-text__text">2. &nbsp; &nbsp;Obecny stan prawny&nbsp;</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Obecnie obowiązującym aktem prawnym w zakresie charakterystyki energetycznej budynk&oacute;w jest Dyrektywa Parlamentu Europejskiego i Rady 2010/31/UE z dnia 19 maja 2010 r. w sprawie charakterystyki energetycznej budynk&oacute;w[2]. &nbsp;Akt ten ma charakter ramowy - nie ustanowiono w nim poziom&oacute;w wymagań obowiązujących jednolicie we wszystkich krajach UE, a jedynie zobowiązano państwa członkowskie do ustalenia konkretnych wymagań i wprowadzenia odpowiednich mechanizm&oacute;w w odniesieniu do charakterystyki energetycznej budynk&oacute;w, kt&oacute;re będą miały zastosowanie na ich terytorium.&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Powyższa dyrektywa, do polskiego porządku prawnego została implementowana ustawą o charakterystyce energetycznej budynk&oacute;w z dnia 29 sierpnia 2014 roku, na mocy kt&oacute;rej wydane zostały akty wykonawcze określającej szczeg&oacute;łowe normy energetyczne dla budownictwa.&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span style="font-weight:bold;" class="wixui-rich-text__text">3. &nbsp; &nbsp;Nowelizacja Dyrektywy EPBD&nbsp;</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">W 2021 roku Komisja Europejska zakończyła pracę i przedstawiła projekt nowej dyrektywy EPBD w sprawie charakterystyki energetycznej budynk&oacute;w[3], kt&oacute;ra jest zasadniczą częścią pakietu &bdquo;Fit for 55&rdquo;. Dyrektywa w odr&oacute;żnieniu od obecnej ma w mniejszym stopniu charakter ramowy, ponieważ harmonizuje kluczowe pojęcia i parametry na poziomie UE oraz daje nowe uprawnienia Komisji Europejskiej.&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">3.1. &nbsp; &nbsp;Zasadnicze założenia projektu Dyrektywy EPBD&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Projekt nowelizacji dyrektywy zakłada następujące regulację:</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Każde państwo członkowskie będzie obowiązane ustanowić &bdquo;krajowy plan renowacji budynk&oacute;w&rdquo;, kt&oacute;ry zakładał będzie przekształcenie wszystkich istniejących budynk&oacute;w (mieszkalnych/ niemieszkalnych/ prywatnych / publicznych) w budynki bezemisyjne do 2050 roku; projekty plan&oacute;w będą przedkładane Komisji Europejskiej, kt&oacute;ra będzie posiadać uprawnienia do wydawania zaleceń, kt&oacute;re państwa członkowskie będą obowiązane &bdquo;należycie uwzględnić&rdquo;; KE będzie mogła w ten spos&oacute;b wpływać na krajowe plany i zwiększać tempo renowacji budynk&oacute;w;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Zdefiniowanie pojęcia &bdquo;budynku bezemisyjnego&rdquo; jako budyneku o bardzo wysokiej charakterystyce energetycznej zgodnej z zasadą &bdquo;efektywność energetyczna przede wszystkim&rdquo;, w kt&oacute;rym bardzo niska ilość nadal wymaganej energii pochodzi w pełni z energii ze źr&oacute;deł odnawialnych, wytwarzanej na poziomie budynku, dzielnicy lub społeczności, jeżeli jest to technicznie wykonalne (w szczeg&oacute;lności energii wytwarzanej na miejscu, przez społeczność energetyczną działającą w zakresie energii odnawialnej lub energii ze źr&oacute;deł odnawialnych lub ciepła odpadowego z systemu ciepłowniczego i chłodniczego). Budynki bezemisyjne stają się nowym standardem dla nowych budynk&oacute;w, wyznaczają poziom, kt&oacute;ry ma zostać osiągnięty dzięki gruntownym renowacjom od 2030 r., oraz wizję dla zasob&oacute;w budowlanych na 2050 r.;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Zdefiniowanie pojęcia &bdquo;normy portfela hipotecznego&rdquo; jako mechanizm&oacute;w motywujących wierzycieli hipotecznych do zwiększania mediany charakterystyki energetycznej portfela budynk&oacute;w objętych hipotekami;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Wszystkie nowe budynki będą budynkami bezemisyjnymi zgodnie z załącznikiem III według następującego harmonogramu:</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">od dnia 1 stycznia 2026 r. &ndash; nowe budynki zajmowane lub będące własnością organ&oacute;w publicznych;&nbsp;<br class="wixui-rich-text__text">
-od dnia 1 stycznia 2028 r. &ndash; wszystkie nowe budynki;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Państwa członkowskie zapewniają, aby:</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">budynki i moduły budynk&oacute;w, będące własnością instytucji publicznych, osiągnęły najp&oacute;źniej po dniu 1 stycznia 2027 r. &ndash; co najmniej klasę charakterystyki energetycznej E; oraz po dniu 1 stycznia 2030 r. &ndash; co najmniej klasę charakterystyki energetycznej D;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><br class="wixui-rich-text__text">
-budynki niemieszkalne i moduły budynk&oacute;w, inne niż będące własnością instytucji publicznych, osiągnęły najp&oacute;źniej po dniu 1 stycznia 2027 r. &ndash; co najmniej klasę charakterystyki energetycznej E; oraz po dniu 1 stycznia 2030 r. &ndash; co najmniej klasę charakterystyki energetycznej D;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><br class="wixui-rich-text__text">
-budynki mieszkalne i moduły budynk&oacute;w osiągnęły najp&oacute;źniej po dniu 1 stycznia 2030 r. &ndash; co najmniej klasę charakterystyki energetycznej E; oraz po dniu 1 stycznia 2033 r. &ndash; co najmniej klasę charakterystyki energetycznej D;&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">zakaz dotowania wymiany kotł&oacute;w na paliwa kopalne (w tym gaz ziemny) od 1 stycznia 2024 roku oraz całkowite wycofanie paliw kopalnych od 2035 roku (z możliwością przedłużenia do 2040 roku za zgodą Komisji Europejskiej);</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">od 2028 roku wszystkie nowe budynki powinny być wyposażone w technologie energii słonecznej, o ile jest to wykonalne pod względem technicznym i ekonomicznym. W przypadku budynk&oacute;w istniejących poddawanych renowacji, taki obowiązek będzie funkcjonował od 2032 roku</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Najp&oacute;źniej do 31 grudnia 2025 roku wprowadzone zostanie ujednolicone w UE świadectwo charakterystyki energetycznej, kt&oacute;re musi być zgodne ze wzorem przedstawionym w załączniku V. Świadectwo zawierać będzie zalecenia dotyczące optymalnej pod względem koszt&oacute;w lub opłacalnej ekonomicznie poprawy charakterystyki energetycznej i redukcji operacyjnych emisji gaz&oacute;w cieplarnianych budynku; świadectwa przygotowywane będą przez certyfikowanych specjalist&oacute;w (w klasach od G do D będą ważne przez 5 lat);</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Do dnia 31 grudnia 2024 r. państwa członkowskie wprowadzają system paszport&oacute;w renowacji, kt&oacute;rych ramy stworzy Komisja Europejska. Paszport renowacji będzie wystawiany przez wykwalifikowanego i certyfikowanego eksperta po przeprowadzeniu kontroli na miejscu i jego gł&oacute;wnym elementem będzie plan renowacji wskazujący kolejność etap&oacute;w renowacji opartych na sobie nawzajem, kt&oacute;rych celem jest transformacja budynku w budynek bezemisyjny najp&oacute;źniej do 2050 r.;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Zwiększenie wymagań dla parking&oacute;w budynk&oacute;w niemieszkalnych posiadających co najmniej 5 miejsc parkingowych (m.in. budowa co najmniej jednego punktu ładowania oraz instalację wbudowanego okablowania dla każdego miejsca parkingowego, aby umożliwić na p&oacute;źniejszym etapie instalację punkt&oacute;w ładowania pojazd&oacute;w elektrycznych; budowę jednego miejsca parkingowego dla rower&oacute;w na jedno miejsce parkingowe dla samochod&oacute;w);</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Zwiększenie wymagań dla parking&oacute;w budynk&oacute;w mieszkalnych posiadających co najmniej 3 miejsca parkingowe (m.in. budowa wbudowanego okablowania na wszystkich miejscach parkingowych, aby umożliwić zainstalowanie na p&oacute;źniejszym etapie punkt&oacute;w ładowania przeznaczonych dla pojazd&oacute;w elektrycznych, co najmniej 2 miejsca parkingowych dla rower&oacute;w na każdy lokal mieszkalny);</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Publicznie dostępna baza świadectw charakterystyki energetycznej budynk&oacute;w;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Państwa członkowskie będą obowiązane, aby wprowadzone zostały skuteczne, proporcjonalne i odstraszające kary za naruszenie przepis&oacute;w krajowych powstałych w wyniku transpozycji dyrektywy do krajowego porządku prawnego.</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span style="font-weight:bold;" class="wixui-rich-text__text">4. &nbsp; &nbsp;Stan budownictwa i mieszkalnictwa w Polsce w kontekście charakterystyki energetycznej&nbsp;</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span style="font-weight:bold;" class="wixui-rich-text__text"><span class="wixGuard wixui-rich-text__text">​</span></span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Przed om&oacute;wieniem skutk&oacute;w planowanych zmian należy przedstawić obecny stan budownictwa i mieszkalnictwa w Polsce w kontekście charakterystyki energetycznej.&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">4.1. &nbsp; &nbsp; Struktura budynk&oacute;w oraz źr&oacute;dła energii</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Przeglądu budynk&oacute;w w zależności od ich przeznaczenia dokonano na podstawie danych GUS dla budynk&oacute;w mieszkalnych i zamieszkania zbiorowego (wyniki Narodowego Spisu Powszechnego Ludności i Mieszkań z 2011 r. zaktualizowane o dane dotyczące nowych budynk&oacute;w oddanych do użytku w latach 2012-2019) oraz GUGiK (Krajowe zbiorcze zestawienie danych dotyczących budynk&oacute;w wg stanu na dzień 1 stycznia 2020 r.).</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Tabela 1. Struktura budynk&oacute;w w Polsce na dzień 1 stycznia 2020 r. wg ich rodzaj&oacute;w</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><br class="wixui-rich-text__text">
-Źr&oacute;dło: GUS[4]</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">W tym miejscu należy dodać, że ponad 0,5 mln budynk&oacute;w może zawierać wyroby zawierające azbest. Mogą się one pojawiać jako wyroby położone na dachach i elewacjach budynk&oacute;w, ale r&oacute;wnież jako wyroby wbudowane wewnątrz ścian zewnętrznych, w szybach zsypowych, windowych i wentylacyjnych.</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Tabela 2. Mediana wartości wskaźnika rocznego zapotrzebowania na energię pierwotną budynk&oacute;w mieszkalnych w zależności od przeznaczenia budynku oraz roku oddania do użytkowania [kWh/(m2 &middot;rok)]</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><br class="wixui-rich-text__text">
-Źr&oacute;dło: Centralny rejestr charakterystyki energetycznej budynk&oacute;w</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">W tabeli 3 przedstawiono strukturę wiekową zasob&oacute;w mieszkaniowych w Polsce powstałych przed 2002 r. wraz z szacunkami dotyczącymi ich wyjściowego jednostkowego zapotrzebowania na nieodnawialną energię pierwotną (EP) i energię końcową tych zasob&oacute;w (EK) przed termomodernizacją. EP jest wskaźnikiem określającym roczne zapotrzebowanie na nieodnawialną energię pierwotną na jednostkę powierzchni pomieszczeń o regulowanej temperaturze powietrza, wyrażony w kWh/(m 2 &middot;rok), natomiast EK to wskaźnik określający roczne zapotrzebowanie na energię końcową na jednostkę powierzchni pomieszczeń o regulowanej temperaturze powietrza wyrażony w kWh/(m 2 &middot;rok).</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Tabela 3. Struktura wiekowa zasob&oacute;w mieszkaniowych w Polsce zbudowanych przed 2002 r. oraz ich wyjściowe wskaźniki jednostkowego zapotrzebowania na energię</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><br class="wixui-rich-text__text">
-Źr&oacute;dło: Zamieszkane Budynki. Narodowy Spis Powszechny Ludności i Mieszkań 2011; GUS 2013; Praca zbiorowa pod redakcją Stanisława Mańkowskiego i Edwarda Szczechowiaka &bdquo;Opracowanie optymalnych energetycznie typowych rozwiązań strukturalno-materiałowych i instalacyjnych budynk&oacute;w&rdquo;.</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Wykres 1. Struktura zużycia energii w gospodarstwach domowych w przeliczeniu na 1 mieszkańca w podziale na poszczeg&oacute;lne nośniki energii w 2020 r.</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><br class="wixui-rich-text__text">
-Źr&oacute;dło: GUS[5]</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><br class="wixui-rich-text__text">
-W Polsce około 70% z 6,87 miliona mieszkalnych budynk&oacute;w (obejmujących zar&oacute;wno domy jednorodzinne, jak i budynki wielorodzinne) wymaga modernizacji energetycznej. Około 16% z tej liczby, czyli około 1,1 miliona budynk&oacute;w, kt&oacute;re zawierają powyżej 2 milion&oacute;w mieszkań, zalicza się do tak zwanych &bdquo;wampir&oacute;w energetycznych&rdquo;. Są to budynki należące do najniższych kategorii efektywności energetycznej, odpowiadające za jedną trzecią całkowitego zużycia energii we wszystkich budynkach mieszkalnych w Polsce.</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">4.2. &nbsp; &nbsp;Obecne inwestycje w niskoemisyjne źr&oacute;dła energii oraz termomodernizację w Polsce</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Mając na uwadze korzyści ekonomiczne oraz panujące trendy w zakresie ochrony klimatu obecnie właściciele nieruchomości budynkowych w Polsce prowadzą inwestycję w niskoemisyjne źr&oacute;dła energii.&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Wykres 2. Dynamika inwestycji w niskoemisyjne źr&oacute;dła energii (lewy panel) oraz ich skumulowana wartość (prawy panel) w latach 2014-2019</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><br class="wixui-rich-text__text">
-Źr&oacute;dło: oszacowanie WiseEuropa na podstawie danych dot. publicznych program&oacute;w wsparcia renowacji zasob&oacute;w budowlanych w Polsce</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Wykres 3. Dynamika inwestycji w renowację budynk&oacute;w (lewy panel) oraz ich skumulowana wartość (prawy panel) według kluczowych źr&oacute;deł finansowania w latach 2014-2019</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Źr&oacute;dło: oszacowanie WiseEuropa na podstawie danych dot. publicznych program&oacute;w wsparcia renowacji zasob&oacute;w budowlanych w Polsce</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Ponadto, jak wynika z deklaracji podatkowych, Polacy chętnie dokonują inwestycji w przedsięwzięcia termomodernizacyjne &ndash; od 2019 roku skorzystało z ulgi termomodernizacyjnej 1,7 mln os&oacute;b, kt&oacute;rzy odliczyli od podstawy opodatkowania inwestycje o łącznej wartości 29 mld zł.&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span style="font-weight:bold;" class="wixui-rich-text__text">5. &nbsp; &nbsp;Ocena skutk&oacute;w projektowanej nowelizacji Dyrektywy EPBD&nbsp;</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span style="font-weight:bold;" class="wixui-rich-text__text"><span class="wixGuard wixui-rich-text__text">​</span></span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Podporządkowanie budownictwa wyznaczonym ideologicznie celom klimatycznym, w oderwaniu od racjonalnych przesłanek oraz koszt&oacute;w związanych przestawieniem budownictwa na bezemisyjność wpłynie negatywnie na sytuację finansową os&oacute;b zmuszonych do przeprowadzania kosztownych renowacji. Nawet Komisja Europejska w motywach dyrektywy wskazuje na konieczność rozłożenia renowacji budynk&oacute;w w czasie przy wykorzystaniu paszport&oacute;w renowacji w celu &bdquo;rozwiązania problemu wysokich koszt&oacute;w początkowych&rdquo;.</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Przyjęte założenia mają na celu dokonywanie przymusowych, pod groźbą sankcji karnych, renowacji wszystkich budynk&oacute;w do 2050 roku w celu osiągnięcia ich bezemisyjności. Taki spos&oacute;b wprowadzania zmian nie będzie wzbudzał zaufania społecznego, w szczeg&oacute;lności wśr&oacute;d os&oacute;b ubogich. Takie postanowienia wymuszające pod groźbą sankcji karnych i administracyjnych remont&oacute;w budynk&oacute;w w celu poprawy efektywności energetycznej należy r&oacute;wnież krytycznie ocenić w kontekście konstytucyjnej ochrony prawa własności.&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Aktualnie realizowane na mocy polskich przepis&oacute;w wykonawczych założenia związane z efektywnością energetyczną, są krytykowane w doktrynie jako zbyt rygorystyczne i zbyt kosztowne, ograniczające rozw&oacute;j budownictwa mieszkaniowego[6].&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Dla przykładu[7]:&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Koszty budowy budynk&oacute;w projektowanych na rok 2021 (2019) są wyższe o około 30% w stosunku do budynku wg wymagań z 2014 r., co stanowi około 350 do 400 zł/m2;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Czas zwrotu poniesionych nakład&oacute;w względem budynk&oacute;w spełniających wymagania z 2014 r. wynosi około 35-40 lat.</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Miesięczna rata 30-letniego kredytu wzrośnie dla budynk&oacute;w według WT 2017 o około 150&ndash;200 zł, a dla budynk&oacute;w według WT 2021 o 300&ndash;450 zł, w zależności do wielkości budynku. Jest to stosunkowo dużo kwota.</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Spełniając wymagania prawne WT 2017, trzeba będzie spłacić kredyt na łączną kwotę o 50 do 85 tys. zł większą, a dla budynku według WT 2021 roku o 100 do 200 tys. zł większą, w zależności do wielkości budynku.</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Eksperci wskazują, że obecne przepisy i normy są w niekt&oacute;rych aspektach pozornie efektywne energetycznie, a generują zbędne koszty. Jak wskazuje Przemysław Dziąg, radca prawny Polskiego Związku Firm Deweloperskich, wskazuje na problem związany z obowiązkowymi stacjami ładowania samochod&oacute;w elektrycznych:&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&bdquo;Tak jest np. w przypadku istniejącego od dw&oacute;ch lat obowiązku zapewnienia mocy przyłączeniowej w nowych budynkach, pozwalającej na instalację punkt&oacute;w ładowania dla samochod&oacute;w elektrycznych o mocy nie mniejszej niż 3,7 kW, przypadającej na 50 proc. miejsc postojowych. Problem w tym, że obecnie w całym kraju udział aut elektrycznych i hybryd wynosi ok. 0,3 proc. Oznacza to, że inwestorzy muszą zapewniać, a potem wsp&oacute;lnota musi utrzymywać moc przyłączeniową, kt&oacute;ra nie jest w rzeczywistości wykorzystywana&rdquo;.[8]&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Projekt nowelizacji dyrektywy EPBD zakłada bardzo szybkie tempo remont&oacute;w i termomodernizacji, co wpłynie znacząco na budżety domowe gospodarstw domowych os&oacute;b najuboższych. To właśnie koszty wdrażania projektowanych norm z zakresu efektywności energetycznej budzą największe zaniepokojenie Europejczyk&oacute;w. Poza Polską, problem dostosowania zasobu mieszkaniowego do nowych przepis&oacute;w dotknie pozostałe państwa regionu Europy Środkowej, ale r&oacute;wnież niekt&oacute;re państwa tzw. starej Unii, w szczeg&oacute;lności Włochy i Hiszpanię[9].&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Wpływanie przez państwo na banki poprzez &bdquo;normy portfela hipotecznego&rdquo; może oznaczać, że banki będą zobligowane do nieudzielania kredyt&oacute;w na finansowanie zakupu lub budowy budynk&oacute;w, kt&oacute;re nie będą realizować przyjętych założeń w zakresie charakterystyki energetycznej nawet jeżeli ich budowa byłaby zgodna z obowiązującym prawem (warunkami technicznymi dla budownictwa). Narzucenie bankom i instytucjom finansowym określonej.&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><br class="wixui-rich-text__text">
-Dane statystyczne pokazują, że w latach 2014-2019 modernizację w zakresie efektywności energetycznej budynk&oacute;w były prowadzone w niewielkim stopniu przez właścicieli budynk&oacute;w, co pozwala postawić tezę, że inwestorzy nie posiadają kapitału, kt&oacute;ry będą mogli przeznaczyć na spełnienie wymagań nowelizowanej dyrektywy, co może oznaczać, że realizacja założonych cel&oacute;w nie będzie możliwa.</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><br class="wixui-rich-text__text">
-Ograniczenie prawa własności poprzez tworzenie nieproporcjonalnych wymagań w zakresie warunk&oacute;w technicznych związanych z budownictwem oraz wprowadzenie dodatkowych wymagań ograniczających obr&oacute;t nieruchomościami. W tym zakresie wskazać trzeba na ograniczenie prawa do prywatności poprzez tworzenie publicznej bazy świadectw charakterystyki energetycznej. Aktualnie w Polsce już obowiązuje Centralny Rejestr Charakterystyki Energetycznej Budynk&oacute;w, z kt&oacute;rego każdy może uzyskać informacje o zużyciu energii, a także poznać m.in. jednostkowa wielkość emisji, dla każdego budynku, kt&oacute;ry posiada charakterystykę energetyczną[10].&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Przymusowe instalowanie technologii służących do monitorowania zużycia energii oraz zdalnego sterowania system instalacji, co może w przyszłości zostać wykorzystane do prawnego wpływania na zmniejszanie zużycia energii. Istnieją r&oacute;wnież obawy przed dalszymi wdrożeniami system&oacute;w administracyjnego monitorowania w czasie rzeczywistym zużycia energii przez konkretne gospodarstwa domowe, co może rodzić podejrzenia o zwiększenie inwigilacji obywateli. Zmiana ta oznacza r&oacute;wnież kolejne obciążenia finansowe i koszt wdrożenia projektowanych zmian.</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Wdrażanie bezemisyjności w zakresie zaproponowanym w projekcie nowelizacji dyrektywy EPBD rozpoczęła Warszawa. W Zielonej Wizji Warszawy przyjętej w dniu 20 kwietnia 2023 r. przez Radę m.st. Warszawy uchwałą nr LXXX/2648/2023 z 20 kwietnia 2023 r. &nbsp;oszacowano niezbędne do poniesienia koszty w drodze do neutralności klimatycznej, w tym r&oacute;wnież w odniesieniu do termomodernizacji budynk&oacute;w. Koszty inwestycji poprawienia efektywności budynk&oacute;w komunalnych,&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">znajdujących się w zasobie miasta, zostały oszacowane według cen wskaźnikowych z 2021 r. na następującym poziomie:&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&bull; 917 600 000 PLN dla budynk&oacute;w standardowych,<br class="wixui-rich-text__text">
-&bull; 1 948 500 000 PLN dla budynk&oacute;w zabytkowych[11].&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Aktualnie Warszawa ma w dyspozycji 81 281 lokali komunalnych. Oznacza to, że średni koszt dostosowania jednego lokalu komunalnego do wymog&oacute;w neutralności klimatycznej wyniesie ok. 35 000 PLN. Koszt ten będzie w kolejnych latach wzrastał wraz ze wzrostem cen materiał&oacute;w i urządzeń. Szacowany koszt dotyczy wyłącznie lokali będących w zasobach m. st. Warszawy, kt&oacute;rych użytkownikami są osoby niezamożne, co oznacza, że finansowanie termomodernizacji tych obiekt&oacute;w nie będzie mogło być prowadzone ze zwiększeniem obciążeń najemc&oacute;w tych lokali. Finansowanie remont&oacute;w mających na celu dostosowanie budynk&oacute;w komunalnych do wymog&oacute;w przepis&oacute;w stanowiących wykonanie wdrożenia znowelizowanej Dyrektywy EPBD będzie wiązało się ze zwiększeniem wydatk&oacute;w z budżetu miasta. Dodatkowo, obowiązki przeprowadzenia remont&oacute;w będą stanowiły znaczące obciążenie dla gospodarstw domowych zamieszkujących lokale właścicielskie. Szacowane średnie koszty będą wynosić ok. 30 000 PLN.&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Przymusowa fala renowacji związana ze wdrożeniem projektowanej nowelizacji dyrektywy EPBD będzie wiązała się r&oacute;wnież z wieloma czynnikami o charakterze gospodarczym. O ile dekarbonizacja w zakresie budownictwa mieszkaniowego jest zjawiskiem postępującym, o tyle odejście od kotł&oacute;w gazowych może stanowić dla wielu właścicieli budynk&oacute;w zaskoczenie, ponieważ jeszcze obecnie trwają programy dofinansowujące zakup kotł&oacute;w gazowych. W ostatnich latach Polska poczyniła r&oacute;wnież ogromne nakłady finansowe na budowę infrastruktury pozwalającej na import i dywersyfikację dostaw gazu (m.in. Terminal LNG im. Prezydenta Lecha Kaczyńskiego w Świnoujściu &ndash; koszt ok. 3,5 mld złotych, Baltic Pipe -koszt ok.7,6 mld złotych, łącznie po stronie Polski i Danii). Duże nakłady na tworzenie tej infrastruktury potrzebują czasu, aby osiągnąć odpowiednie stopy zwrotu. Jednak pomimo tego, że gaz ziemny był jeszcze niedawno uznawany przez Unię Europejską za &bdquo;zieloną energię&rdquo;, nowelizacja Dyrektywy EPBD zakłada zakaz kotł&oacute;w gazowych na potrzeby nowych dom&oacute;w już od 2027 roku, a już od 2024 roku państwa członkowskie nie będą mogły subsydiować zakupu kotł&oacute;w na paliwa kopalne, w tym gaz ziemny[12].&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span style="font-weight:bold;" class="wixui-rich-text__text">6. &nbsp; &nbsp;Podsumowanie&nbsp;</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Aktualnie w Unii Europejskiej trwają prace w związku z nowelizacją unijnej dyrektywy w sprawie charakterystyki energetycznej budynk&oacute;w, kt&oacute;rej celem jest realizacja daleko idących cel&oacute;w klimatycznych wyznaczanych przez UE w ramach europejskiego zielonego ładu oraz pakietu &bdquo;Fit for 55&rdquo;. Nowelizacja zakłada budowę wyłącznie budynk&oacute;w bezemisyjnych od 2030 roku oraz przymusową, zagrożoną sankcjami karnymi, renowacja istniejących budynk&oacute;w do 2050 roku, tak aby wszystkie budynki na terenie UE w 2050 roku były bezemisyjne (korzystały wyłącznie z odnawialnych źr&oacute;dłach energii). Planowane zmiany wpłyną negatywnie na budżety gospodarstw domowych, w szczeg&oacute;lności os&oacute;b niezamożnych, mieszkających aktualnie w starszym zasobie mieszkaniowym. Projektowana dyrektywa zakłada zwiększoną harmonizację prawa unijnego oraz daje Komisji Europejskiej nowe kompetencję do wpływania na państwa członkowskie w zakresie realizowania utopijnej wizji neutralności klimatycznej w obszarze budownictwa. Negatywnie należy ocenić r&oacute;wnież regulacje, kt&oacute;rych celem jest ograniczanie kredyt&oacute;w hipotecznych dla budynk&oacute;w nierealizujących założeń w zakresie charakterystyki energetycznej. Do realizacji tych cel&oacute;w Komisja Europejska w projekcie dyrektywy tworzy ramy prawne będące systemem represji oraz wpływania na przyspieszenie remont&oacute;w istniejących budynk&oacute;w (&bdquo;paszporty renowacji&rdquo;).</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Skutkiem tak rygorystycznego podejścia do realizacji wyznaczonych ideologicznie cel&oacute;w klimatycznych będzie znaczący wzrost koszt&oacute;w inwestycji budowlanych, w szczeg&oacute;lności dla budownictwa mieszkaniowego. To w jeszcze większym stopniu ograniczy Polakom możliwość zakupu własnego mieszkania czy budowę domu jednorodzinnego. Trudna sytuacja na rynku mieszkaniowym wpływa r&oacute;wnież na cały szereg problem&oacute;w społecznych (m.in. dzietność). Z kolei represyjne wpływanie na właścicieli istniejących budynk&oacute;w, aby przeprowadzili długotrwałe, rozłożone na lata i bardzo kosztowne remonty instalacji oraz wymiana źr&oacute;deł ciepła spowoduje drastyczne obniżenie poziomu życia Polak&oacute;w i podporządkowanie budżetu domowego wydatkom na poprawienie charakterystyki energetycznej. Co szczeg&oacute;lnie kłopotliwe, zmiany dotyczyć będą r&oacute;wnież właścicieli dom&oacute;w i mieszkań budowanych aktualnie, ponieważ wyłącznie odnawialne źr&oacute;dła energii będą mogły zapewnić bezemisyjność budynku. Najbardziej jednak dotkną osoby biedniejsze zamieszkujące budynki sprzed kilkudziesięciu lat. Z danych GUS wynika, że skutki nowelizacji dyrektywy mogą do 2050 roku dotknąć ponad 90% budynk&oacute;w w Polsce.</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;"><span class="wixGuard wixui-rich-text__text">​</span></p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Należy dodać, że obowiązujące już aktualnie w Polsce bardzo rygorystyczne warunki techniczne dla budynk&oacute;w w zakresie efektywności energetycznej powodują znaczący wzrost cen inwestycji, a co za tym idzie bardzo często kredyt&oacute;w hipotecznych, co negatywnie wpływa na rozw&oacute;j budownictwa mieszkaniowego w Polsce i ogranicza Polakom dostęp do posiadania własnego mieszkania, a to z kolei przekłada się na szereg negatywnych skutk&oacute;w społecznych.</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">Krytyczne stanowisko wobec daleko idącej nowelizacji dyrektywy EPBD nie może przysłaniać korzyści płynących z rozwoju nowoczesnych technologii w obszarze efektywności energetycznej, kt&oacute;re pozwalają właścicielom dom&oacute;w i mieszkań na oszczędności związane z pozyskaniem tańszej energii. Jednak z prawa własności wynika, że decyzja o wyborze optymalnego źr&oacute;dła energii powinna należeć do właściciela budynku. Polacy są narodem świadomym koszt&oacute;w związanych z pozyskaniem energii dla własnych dom&oacute;w i mieszkań, a także wpływu pozyskiwania energii na jakość powietrza i własnego otoczenia. Dla przykładu, aż 30% wszystkich sprzedanych w Polsce urządzeń grzewczych stanowiły nowoczesne i drogie pompy ciepła. Polacy r&oacute;wnież masowo przystępowali do program&oacute;w związanych z wymianą kotł&oacute;w węglowych na kotły gazowe. Zwiększanie efektywności energetycznej budynk&oacute;w nie wymaga realizacji absurdalnych cel&oacute;w klimatycznych, ale dostępu dla źr&oacute;deł energii, kt&oacute;rych cena nie będzie wysoka z uwagi na nadmierne opodatkowanie, a jednocześnie będą one dawać poczucie komfortu użytkownikowi. Pozytywnym zjawiskiem gospodarczym związanym z nowelizacją Dyrektywy EPBD będzie pobudzenie polskiego sektora budownictwa mieszkaniowego, co będzie związane ogromną falą termomodernizacji.&nbsp;</p></p>
-<p style='text-align: justify;'><p class="font_8 wixui-rich-text__text" style="font-size:18px;">&nbsp;</p></p>
-<p style='text-align: justify;'><ol class="font_8 wixui-rich-text__text" style="font-size:18px;">
-<li class="wixui-rich-text__text">
-<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Dyrektywa 2006/32/WE Parlamentu Europejskiego i Rady z dnia 5 kwietnia 2006 r. w sprawie efektywności końcowego wykorzystania energii i usług energetycznych oraz uchylająca dyrektywę Rady 93/76/EWG.</p>
-</li>
-<li class="wixui-rich-text__text">
-<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Źr&oacute;dło: <a data-auto-recognition="true" href="https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:32010L0031&amp;from=PL&nbsp;" target="_blank" class="wixui-rich-text__text">https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:32010L0031&amp;from=PL&nbsp;</a></p>
-</li>
-<li class="wixui-rich-text__text">
-<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Źr&oacute;dło: <a data-auto-recognition="true" href="https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:52021PC0802&amp;from=EN&nbsp;" target="_blank" class="wixui-rich-text__text">https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:52021PC0802&amp;from=EN&nbsp;</a></p>
-</li>
-<li class="wixui-rich-text__text">
-<p class="font_8 wixui-rich-text__text" style="font-size:18px;">&bdquo;Długoterminowa strategia renowacji budynk&oacute;w. Wspieranie renowacji krajowego zasobu budowlanego&rdquo; Załącznik do uchwały nr 23/2022 Rady Ministr&oacute;w z dnia 9 lutego 2022 r.</p>
-</li>
-<li class="wixui-rich-text__text">
-<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Raport &bdquo;Energia 2022&rdquo; Źr&oacute;dło: <a data-auto-recognition="true" href="https://stat.gov.pl/obszary-tematyczne/srodowisko-energia/energia/energia-2022,1,10.html" target="_blank" class="wixui-rich-text__text">https://stat.gov.pl/obszary-tematyczne/srodowisko-energia/energia/energia-2022,1,10.html</a></p>
-</li>
-<li class="wixui-rich-text__text">
-<p class="font_8 wixui-rich-text__text" style="font-size:18px;">W. Ratajczak (Przewodniczący Gł&oacute;wnej Komisji Legislacyjnej oraz Gł&oacute;wnej Sekcji Ciepłownictwa Ogrzewnictwa Wentylacji i Inżynierii Atmosfery Polskiego Zrzeszenia Inżynier&oacute;w i Technik&oacute;w Sanitarnych), Punkt widzenia: energooszczędność w budownictwie mieszkaniowym, &bdquo;Rynek instalacyjny&rdquo; 6/2018; Sz. Firląg, A. Węglarz, A. Goleniewski, Wskaźnik zapotrzebowania na nieodwracalną energię pierwotną, a optymalizacja koszt&oacute;w, &bdquo;Rynek Instalacyjny&rdquo; 12/2015;</p>
-</li>
-<li class="wixui-rich-text__text">
-<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Przykład za wyliczeniami: K. Łaskawiec, J. Żurawski, Kontrowersje wok&oacute;ł warunk&oacute;w technicznych. Czy to się opłaca?&rdquo;, &bdquo;Izolacje&rdquo; 2/2017.</p>
-</li>
-<li class="wixui-rich-text__text">
-<p class="font_8 wixui-rich-text__text" style="font-size:18px;">S. Sobczyk-Grygiel, &bdquo;Ciepłe domy i wielkie wydatki. Co przyniosą NOWE REGULACJE UE?&rdquo; [w:] Gospodarka.dziennik.pl, 8 lutego 2023 r., dostęp bezpośredni: <a data-auto-recognition="true" href="https://gospodarka.dziennik.pl/news/artykuly/8655685,dekarbonizacja-budownictwa-nowe-regulacje-unijne.html&nbsp;" target="_blank" class="wixui-rich-text__text">https://gospodarka.dziennik.pl/news/artykuly/8655685,dekarbonizacja-budownictwa-nowe-regulacje-unijne.html&nbsp;</a></p>
-</li>
-<li class="wixui-rich-text__text">
-<p class="font_8 wixui-rich-text__text" style="font-size:18px;">A. Prajsnar, &bdquo;Nowa kontrowersyjna dyrektywa budynkowa UE. Będzie bardzo kosztowna, nie tylko dla Polski&rdquo;, Forsal, 11 października 2023 r., dostęp bezpośredni: <a data-auto-recognition="true" href="https://forsal.pl/nieruchomosci/artykuly/9317503,nowa-kontrowersyjna-dyrektywa-budynkowa-ue-bedzie-bardzo-kosztowna-n.html&nbsp;" target="_blank" class="wixui-rich-text__text">https://forsal.pl/nieruchomosci/artykuly/9317503,nowa-kontrowersyjna-dyrektywa-budynkowa-ue-bedzie-bardzo-kosztowna-n.html&nbsp;</a></p>
-</li>
-<li class="wixui-rich-text__text">
-<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Dziś wykonanie charakterystyki energetycznej budynku jest obligatoryjne przy sprzedaży i najmie domu lub lokalu.</p>
-</li>
-<li class="wixui-rich-text__text">
-<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Odpowiedź Prezydenta m. st. Warszawy Rafała Trzaskowskiego na interpelacje Radnego m. st. Warszawy Piotra Mazurka (PiS) z dnia 15 czerwca 2023 r., Znak sprawy: GP-KR.0003.213.2023.ANO.</p>
-</li>
-<li class="wixui-rich-text__text">
-<p class="font_8 wixui-rich-text__text" style="font-size:18px;">Projektowana nowelizacja Dyrektywy EPBD dopuszcza jednak wykorzystanie kotł&oacute;w gazowych certyfikowanych do pracy z paliwami odnawialnymi, a także hybrydowych system&oacute;w grzewczych. W nowych i modernizowanych budynkach nie będą mogły być wykorzystywane jedynie źr&oacute;dła ciepła zasilane wyłącznie paliwami kopalnymi.</p>
-</li>
+.article-text {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
 
+.article-text p {
+    margin-bottom: 1.5rem;
+}
 
-
-
-    
+.author-bio {
+    margin-top: 1rem;
+}
+</style>
 @endsection

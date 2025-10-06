@@ -8,15 +8,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
-                            <div class="home-page-title text-center">
-                                <h1 class="text-white mb-2">Analiza porównawcza systemu wyborów sędziów w Polsce i Niemczech</h1>
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb justify-content-center bg-transparent">
-                                        <li class="breadcrumb-item text-white"><a href="/" class="text-white">Strona główna</a></li>
-                                        <li class="breadcrumb-item  active" aria-current="page"><a href="{{ url('/blog-details') }}" class="text-custom">Analiza porównawcza systemu wyborów sędziów w Polsce i Niemczech</a></li>
-                                    </ol>
-                                </nav>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -217,6 +209,3 @@
         <li>H. Suchocka, <i>op.cit.</i>, s. 46.</li>
         <li>H. Suchocka, <i>op.cit.</i>, s. 54.</li>
     </ol>
-
-
- 

@@ -13,15 +13,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
-                            <div class="home-page-title text-center">
-                                <h1 class="text-white mb-2">Team Details</h1>
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb justify-content-center bg-transparent">
-                                        <li class="breadcrumb-item text-white"><a href="index.html" class="text-white">Home</a></li>
-                                        <li class="breadcrumb-item  active" aria-current="page"><a href="team-details.html" class="text-custom">Team Details</a></li>
-                                    </ol>
-                                </nav>
-                            </div>
+
                         </div>
                     </div>
                 </div>

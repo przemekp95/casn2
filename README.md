@@ -14,6 +14,7 @@ An in-depth paragraph about your project and overview of use.
 * Composer
 * Node.js and npm
 * Laravel Framework ^11.9
+* Static content (no database required)
 
 ### Installing
 

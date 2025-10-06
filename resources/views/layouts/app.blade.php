@@ -1,43 +1,81 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-<meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Centrum Analiz Służby Niepodległej</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="centrum analiz, fundacja służba niepodległej, ngo" />
-    <meta name="author" content="Zoyothemes" />
 
-<!-- Favicon -->
-<link rel="shortcut icon" href="{{ asset('images/logo.jpg') }}">
+    <!-- Primary Meta Tags -->
+    <title>@yield('title', 'CASN - Centrum Analiz Strategicznych i Niejawnych')</title>
+    <meta name="title" content="@yield('title', 'CASN - Centrum Analiz Strategicznych i Niejawnych')">
+    <meta name="description" content="@yield('description', 'Centrum Analiz Strategicznych i Niejawnych (CASN) to think tank skupiający ekspertów z różnych dziedzin, publikujący analizy z zakresu bezpieczeństwa, gospodarki i polityki międzynarodowej.')">
+    <meta name="keywords" content="@yield('keywords', 'CASN, analizy strategiczne, bezpieczeństwo, polityka międzynarodowa, think tank, Polska')">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Polish">
+    <meta name="author" content="Centrum Analiz Strategicznych i Niejawnych">
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Rubik:300,400,500,700" rel="stylesheet">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="@yield('title', 'CASN - Centrum Analiz Strategicznych i Niejawnych')">
+    <meta property="og:description" content="@yield('description', 'Centrum Analiz Strategicznych i Niejawnych (CASN) to think tank skupiający ekspertów z różnych dziedzin, publikujący analizy z zakresu bezpieczeństwa, gospodarki i polityki międzynarodowej.')">
+    <meta property="og:image" content="{{ asset('images/logo.jpg') }}">
+    <meta property="og:site_name" content="CASN">
 
-<!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" type="text/css">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ url()->current() }}">
+    <meta property="twitter:title" content="@yield('title', 'CASN - Centrum Analiz Strategicznych i Niejawnych')">
+    <meta property="twitter:description" content="@yield('description', 'Centrum Analiz Strategicznych i Niejawnych (CASN) to think tank skupiający ekspertów z różnych dziedzin, publikujący analizy z zakresu bezpieczeństwa, gospodarki i polityki międzynarodowej.')">
+    <meta property="twitter:image" content="{{ asset('images/logo.jpg') }}">
 
-<!-- Material Icon -->
-<link rel="stylesheet" type="text/css" href="{{ asset('css/materialdesignicons.min.css') }}" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+    <link rel="canonical" href="{{ url()->current() }}">
 
-<!-- Themify Icons -->
-<link rel="stylesheet" type="text/css" href="{{ asset('css/themify-icons.css') }}" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Slider -->
-<link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}" />
-<link rel="stylesheet" href="{{ asset('css/owl.theme.css') }}" />
-<link rel="stylesheet" href="{{ asset('css/owl.transitions.css') }}" />
+    <!-- Original Kevix CSS -->
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/materialdesignicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/owl.carousel.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/owl.theme.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/owl.transitions.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/magnific-popup.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/menu.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/themify-icons.css') }}" rel="stylesheet">
 
-<!-- Magnific Pop-up -->
-<link rel="stylesheet" type="text/css" href="{{ asset('css/magnific-popup.css') }}" />
+    <!-- Custom CSS -->
+    <style>
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .meta {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+    </style>
 
-<!-- Custom CSS -->
-<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
-<link rel="stylesheet" href="{{ asset('css/menu.css') }}">
-
-<meta name="google-site-verification" content="m2YyW7pzg0z3nL2idpMZ2finxS8sCwvYKOe4whiY3kA" />
-
-
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Centrum Analiz Strategicznych i Niejawnych (CASN)",
+        "url": "{{ url('/') }}",
+        "logo": "{{ asset('images/logo.jpg') }}",
+        "description": "Think tank skupiający ekspertów z różnych dziedzin, publikujący analizy z zakresu bezpieczeństwa, gospodarki i polityki międzynarodowej.",
+        "sameAs": [
+            "{{ url('/') }}"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "email": "kontakt@casn.pl"
+        }
+    }
+    </script>
 </head>
 <body>
     @include('partials.header')
@@ -47,42 +85,19 @@
     </main>
 
     @include('partials.footer')
-    
-    <!-- JavaScripts -->
-<script src="{{ asset('js/jquery.min.js') }}"></script>
-<script src="{{ asset('js/popper.min.js') }}"></script>
-<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('js/jquery.easing.min.js') }}"></script>
-<script src="{{ asset('js/scrollspy.min.js') }}"></script>
 
-<!-- Magnific Popup -->
-<script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+    <!-- Original Kevix JS -->
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+    <script src="{{ asset('js/scrollspy.min.js') }}"></script>
+    <script src="{{ asset('js/counter.int.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/portfolio-filter.js') }}"></script>
 
-<!-- Filter -->
-<script src="{{ asset('js/isotope.js') }}"></script>
-<script src="{{ asset('js/masonry.pkgd.min.js') }}"></script>
-
-<!-- Carousel -->
-<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-
-<!-- Portfolio Filter -->
-<script src="{{ asset('js/portfolio-filter.js') }}"></script>
-
-<!-- App JS -->
-<script src="{{ asset('js/app.js') }}"></script>
-
-
-    <script>
-        //owlCarousel
-        $("#owl-demo").owlCarousel({
-            autoPlay: 3000,
-            navigation: true,
-            slideSpeed: 300,
-            paginationSpeed: 400,
-            singleItem: true,
-            navigationText: ["<i class='ti-arrow-left'></i>", "<i class='ti-arrow-right'></i>"]
-
-        });
-    </script>    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

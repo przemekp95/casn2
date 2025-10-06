@@ -3,8 +3,6 @@
 @section('title', 'Home - Kevix Template')
 
 @section('content')
-
-<body>
     <!-- OUR TEAM HOME START -->
     <section class="our-team-home section" id="home">
         <div class="bg-overlay"></div>
@@ -13,15 +11,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
-                            <div class="home-page-title text-center">
-                                <h1 class="text-white mb-2">Nasi autorzy</h1>
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb justify-content-center bg-transparent">
-                                        <li class="breadcrumb-item text-white"><a href="/" class="text-white">Strona główna</a></li>
-                                        <li class="breadcrumb-item  active" aria-current="page"><a href="/autorzy" class="text-custom">Nasi autorzy</a></li>
-                                    </ol>
-                                </nav>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -580,6 +570,4 @@
         </div>
     </section>
     <!-- OUR TEAM END -->
-
-</body>
 @endsection

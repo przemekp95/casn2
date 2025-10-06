@@ -3,88 +3,102 @@
 @section('title', 'Polska między Rosją a Niemcami. Historia i wyzwania.')
 
 @section('content')
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <article class="article-content">
+                <header class="mb-4">
+                    <h1 class="display-4 mb-3">Polska między Rosją a Niemcami. Historia i wyzwania.</h1>
 
-<body>
+                    <div class="article-meta mb-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="{{ asset('public/images/Rak.png') }}" alt="Dr Krzysztof Rak"
+                                 class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                            <div>
+                                <h5 class="mb-0">Dr Krzysztof Rak</h5>
+                                <small class="text-muted">Autor artykułu</small>
+                            </div>
+                        </div>
 
-    <!-- BLOG DETAILS HOME START -->
-    <section class="section" style="padding: 170px 0px 75px 0px; background-size: cover; position: relative; background-position: center center;" id="home">
-        <div class="bg-overlay"></div>
-        <div class="home-center">
-            <div class="home-desc-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="home-page-title text-center">
-                                <h1 class="text-white mb-2">Polska między Rosją a Niemcami. Historia i wyzwania.</h1>
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb justify-content-center bg-transparent">
-                                        <li class="breadcrumb-item text-white"><a href="/" class="text-white">Strona główna</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page"><a href="{{ url('/rak-artykul') }}" class="text-custom">Polska między Rosją a Niemcami</a></li>
-                                    </ol>
-                                </nav>
+                        <div class="article-info">
+                            <span class="badge bg-primary me-2">Analiza</span>
+                            <span class="badge bg-secondary">CASN</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="article-body">
+                    <div class="content-section mb-5">
+                        <h2>Treść analizy</h2>
+                        <div class="article-text">
+                            <p class="text-muted pb-2">Niemcy i Rosja w szczególny sposób wpływały na kształtowanie się konstelacji geopolitycznych w Europie w ciągu ostatnich trzech wieków. Relacje pomiędzy tymi dwoma mocarstwami determinowały losy Polski. Z tego powodu poszukiwanie historycznych prawidłowości cechujących te relacje stanowi klucz do zrozumienia polityki kontynentalnej. Ma to istotne znaczenie dla Polski i innych krajów środkowoeuropejskich, leżących pomiędzy tymi obydwoma mocarstwami, w strefie, w której przycinają się ich interesy. Niemcy i Rosja formowały swoje stosunki według dwóch podstawowych wzorców: strategicznej współpracy i zmagań o osiągnięcie pozycji hegemonicznej. </p>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h3>Informacje o autorze</h3>
+                        <div class="author-bio p-4 bg-light rounded">
+                            <div class="d-flex align-items-start">
+                                <img src="{{ asset('public/images/Rak.png') }}" alt="Dr Krzysztof Rak"
+                                     class="rounded-circle me-3" style="width: 80px; height: 80px; object-fit: cover;">
+                                <div>
+                                    <h5>Dr Krzysztof Rak</h5>
+                                    <p class="mb-2">Polski historyk, analityk Instytutu Zachodniego.</p>
+                                    <a href="{{ url('/rak') }}" class="btn btn-outline-primary btn-sm">
+                                        Zobacz wszystkie artykuły autora
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
-    </section>
-    <!-- BLOG DETAILS HOME END -->
+    </div>
+</div>
 
-    <!-- BLOG DETAILS START -->
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9">
-                   <!-- <div class="blog-details-img">
-                        <img src="images/blog-dateils-img.jpg" class="img-fluid d-block mx-auto">
-                    </div> -->
+<style>
+.article-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
 
-                    <div class="blog-info p-3">
-                        <h2 class="text-dark mb-3">Krzysztof Rak – Polska między Rosją a Niemcami. Historia i wyzwania.</h2>
+.article-meta {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 1.5rem;
+}
 
-                        <div class="blog-info-desc">
-                            <p class="text-muted pb-2">Niemcy i Rosja w szczególny sposób wpływały na kształtowanie się konstelacji geopolitycznych w  Europie w ciągu ostatnich trzech wieków. Relacje pomiędzy tymi dwoma mocarstwami determinowały losy Polski. Z tego powodu poszukiwanie historycznych prawidłowości cechujących te relacje stanowi klucz do zrozumienia polityki kontynentalnej. Ma to istotne znaczenie dla Polski i innych krajów środkowoeuropejskich, leżących pomiędzy tymi obydwoma mocarstwami, w strefie, w której przycinają się ich interesy. Niemcy i Rosja formowały swoje stosunki według dwóch podstawowych wzorców: strategicznej współpracy i zmagań o osiągnięcie pozycji hegemonicznej. </p>
-                        </div>
+.article-info .badge {
+    font-size: 0.8rem;
+}
 
-                        <div class="blog-info-desc mt-4">
-                                <p class="text-muted">Gdy Niemcy i Rosja/ZSRR realizowały politykę strategicznej współpracy, odgrywały dominującą rolę w Europie Środkowej i Wschodniej, co pozwalało im dzielić się strefami wpływów w tym regionie. Tę zależność można zaobserwować np. w okresie kanclerstwa Ottona von Bismarcka i Angeli Merkel.  
-Najważniejszym dziejowym dokonaniem Bismarcka było zjednoczenie Niemiec. Do drugiej połowy XIX wieku były one luźnym konglomeratem niezależnych krajów. Jako premier największego z nich – Prus – Bismarck podjął wysiłek stworzenia jednego niemieckiego państwa narodowego. Dokonał tego „krwią i żelazem”, pokonując na polu bitwy dwa mocarstwa. Najpierw Austro-Węgry w roku 1866 pod Sadową, z którymi Prusy od dziesięcioleci rywalizowały o przywództwo wśród Niemców. Cztery lata później pod Sedanem, Francję, która chciała zdominować politykę europejską.
-Tym zwycięstwom towarzyszyła skuteczna dyplomacja. Bismarck zyskał dla zjednoczenia przychylność lub neutralność reszty mocarstw: Rosji, Wielkiej Brytanii i Włoch. Dzięki temu święcił największy w swoim życiu triumf - proklamowanie Cesarstwa Niemieckiego 17 stycznia 1871 r. w sali lustrzanej Wersalu.
-Powstanie nowego państwa w sercu Europy zmieniło jej sytuację geopolityczną i bieg dziejów. Otworzyło drogę do dwóch wojennych katastrof, które doprowadziły Stary Kontynent na skraj upadku i bankructwa.
-Wielkość Bismarcka polegała na tym, że przewidział to zagrożenie. Dlatego przekonywał swoich zagranicznych partnerów, że Niemcy są „syte”; że nie pragną nowych zdobyczy terytorialnych i dążą do utrzymania status quo. „Żelazny kanclerz” chciał odgrywać rolę „uczciwego maklera”. Bezstronnego pośrednika, który, działając na rzecz pokoju i stabilności, ułatwi mocarstwom porozumienie, sprawiedliwie uwzględniające ich interesy.
-Bismarck uważał, że dążenie do hegemonii zakończy się porażką Berlina, ponieważ państwa europejskie stworzą zwycięską antyniemiecką koalicję. Dlatego za pożądaną uważał „taką ogólną sytuację polityczną, w której potrzebowałyby nas wszystkie mocarstwa, a stosunki istniejące między nimi uniemożliwiałyby utworzenie przeciwko nam koalicji”. Bismarck miał świadomość, że jakakolwiek próba Berlina zwiększenia własnej potęgi w celu zdominowania porządku kontynentalnego będzie mieć katastrofalne skutki. Spowoduje bowiem automatyczne powstanie antyniemieckiej koalicji, która będzie w stanie pohamować apetyty Rzeszy, a w przypadku konfliktu zbrojnego rozstrzygnąć go na swoją korzyść. Bismarck, mając na uwadze to zagrożenie, starał się zawczasu przeciwdziałać zbliżeniu ze sobą głównych mocarstw światowych. Jego polityka polegała na stałej  międzynarodowej izolacji Francji i zbliżeniu z dwoma mocarstwami kontynentalnymi: Austro-Węgrami i Rosją. Szczególne znaczenie przykładał do relacji z tym ostatnim państwem. Starał się robić wszystko, a żeby Petersburg nie odczuwał żadnego zagrożenia na swojej flance zachodniej. Stąd kluczową dla stosunków między obu mocarstwami okazała się polityka wobec Polski. Wyznaczenie ścisłego podziału stref wpływów na jej terytorium i szerzej w obszarze środkowoeuropejskim było gwarancją dobrych strategicznych stosunków pomiędzy Berlinem a Petersburgiem. 
-W zmienionych w istotny sposób uwarunkowaniach geopolitycznych dwudziestego wieku do modelu bismarckowskiego nawiązywała Ostpolitik kanclerzy: Gerharda Schrödera i Angeli Merkel. U jej podstaw leżało założenie o konieczności zachowania europejskiego status quo, jakie powstało po roku 1989. Niemieccy przywódcy w XXI wieku dobrze rozumieli to geopolityczne wyzwanie i bezpośrednio nawiązywali do dzieła „żelaznego kanclerza”. Niemiecki prezydent Frank-Walter Steinmeier dekadę temu, pełniąc funkcję ministra spraw zagranicznych RFN zadeklarował, że „dziedzictwo Bismarcka po dziś dzień kształtuje niemiecką politykę zagraniczną”. Bliska współpraca na Niemiec z Rosją i kontrola przez oba państwa przepływu surowców energetycznych służyła realizacji wzajemnych interesu, ale również swoiście pojmowanemu bezpieczeństwu europejskiemu i zachowania status quo. Swoiście, bo kosztem małych i średnich państw środkowoeuropejskich.
-</p>
-                        </div>
+.content-section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
 
-                        <div class="blog-info-desc mt-4">
-                            <p class="text-muted">Gdy jednak Niemcy i Rosja rywalizowały między sobą o hegemonię, z reguły kończyło się to przymierzem Moskwy/Petersburga z mocarstwami zachodnimi i klęską Niemiec. Taki scenariusz ziścił się zarówno w trakcie pierwszej, jak i drugiej wojny światowej. Przyjrzyjmy się bliżej temu drugiemu przykładowi. Główną przyczyną tego konfliktu były imperialne dążenia dwóch narodów: sowieckiego (rosyjskiego) i niemieckiego. Uosabiali je rywalizujący ze sobą dyktatorzy: Adolf Hitler i Józef Stalin. Obaj chcieli wojny za wszelką cenę, ponieważ uważali, że tylko tak uda im się osiągnąć swój cel, czyli światowe imperium legitymizowane przez hegemoniczną ideologię. Hitler dążył do panowania na kuli ziemskiej przedstawicieli rasy nordyckiej, a Stalin –  do globalnej dyktatury proletariatu. 
-Przebieg tej wojny na szczęście dla ludzkości pokrzyżował plany obydwu dyktatorów. Jej bezpośrednim rezultatem było to, że nie ziściło się ani wszechświatowe imperium narodu niemieckiego, ani wszechświatowe władztwo komunistycznej oligarchii. Jakkolwiek Niemcy przegrali, to na tyle wyczerpali zasoby Sowietów, że ci nie byli już w stanie po raz kolejny podjąć wysiłku walki o dominację nad światem.
-Kilka lat po klęsce III Rzeszy okazało się, że prawdziwym zwycięzcą stał się Zachód. A tak naprawdę Stany Zjednoczone i stworzony przez nie system sojuszniczy. Tym razem bowiem, inaczej niż po I wojnie światowej, Waszyngton utrzymał swoją polityczno-wojskową obecność na Starym Kontynencie. Ameryka przyczyniła się do szybkiej odbudowy gospodarczej Europy, do jej stopniowej integracji i do stworzenia najsilniejszego sojuszu wojskowego w historii świata. Od tej pory czynnik amerykański odgrywać będzie kluczową rolę w kształtowaniu się stosunków pomiędzy mocarstwami, a zatem także pomiędzy Niemcami a Sowietami.
-</p>
-                        </div>
+.content-section h3 {
+    color: #34495e;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
 
-                        <div class="blog-info-desc">
-                            <p class="text-muted pb-2">W jaki sposób wytłumaczyć ten dialektykę współpracy i konfliktu. Tego rodzaju zależność związana jest z faktem, że zarówno Niemcy, jak i Rosja/ZSRR zajmowały w Eurazji pozycję półhegemoniczną, to znaczy z jednej strony były zbyt potężne, ażeby czerpać satysfakcję z pozycji mocarstwa regionalnego, a z drugiej zbyt słabe, aby zdominować kontynent, a w konsekwencji stać się mocarstwem globalnym par excellence. Półhegemoniczność jest naturalnym ograniczeniem potęgi Niemiec i Rosji, wynikającym z istnienia bloku mocarstw nazywanego Zachodem, poprzez który należy rozumieć ewoluującą historycznie konstelację tworzoną przez Francję, Wielką Brytanię i Stany Zjednoczone. To właśnie Zachód, którego potęga opierała się na dwóch mocarstwach morskich, stał na straży, ażeby żadne mocarstwo lądowe nie zdominowało Eurazji. Dlatego też w naturalny sposób stawał się on wrogiem lub konkurentem Niemiec i Rosji, gdy te próbowały realizować projekt kontynentalnego imperium. 
-Półhegemoniczność tych dwóch krajów zawsze stanowiła śmiertelne zagrożenie dla Europy Środkowej i Wschodniej. Region ten był bowiem naturalną przestrzenią ich ekspansji. Tu Niemcy i Rosja szukały swojego mocarstwowego potwierdzenia. Tu albo dzieliły się strefami wpływów, albo prowadziły śmiertelną walkę o hegemonię. Za ich sprawą region ten nazwano „skrwawionymi ziemiami”. Dlatego Polska, której nieszczęście polegało na tym, że leżała pomiędzy tymi krajami, stawała się ofiarą ich polityki. Prawdziwym geopolitycznym przewrotem, który w ostatecznej konsekwencji umożliwił Niemcom (Prusom) oraz Rosji osiągnięcie statusu półhegemona w Europie Środkowej, było zniszczenie pod koniec XVIII w. państwa polskiego. Po zakończeniu zimnej wojny zarówno Niemcy, jak i Rosja utraciły swój półhegemoniczny status i zrezygnowały z prób tworzenia kontynentalnego imperium. Stało się to za sprawą dwóch kluczowych czynników. Po pierwsze, stałej obecności wojskowo-politycznej Stanów Zjednoczonych w Eurazji Zachodniej; po drugie, osiągnięcia przez Chiny pozycji mocarstwa globalnego na wschodzie tego wielkiego kontynentu. 
-Ta nowa sytuacja geopolityczna sprzyjała strategicznej współpracy rosyjsko-niemieckiej, gdyż miała znacznie mniejszy, regionalny wymiar, bo dotyczyła w gruncie rzeczy podziału stref wpływów w Europie Środkowej i Wschodniej. Z tego względu tolerowały ją dwa główne mocarstwa światowe: Stany Zjednoczone i Chiny. W tym układzie strategiczna współpraca Berlina i Moskwy lewarowała pozycję obydwu państw; Berlina w stosunku do Waszyngtonu, a Moskwy w stosunku do Pekinu. 
-</p>
-                        </div>
+.article-text {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
 
-                        <div class="blog-info-desc">
-                            <p class="text-muted pb-2">Decyzja Władimira Putina o rozpoczęciu pełnoskalowej wojny z Ukrainą 24 lutego 2022 r. zniszczyła ten korzystny dla obu stron układ. Niemieckie zaufanie zdobywane przez dziesięciolecia, wielkim wysiłkiem konsekwentnej polityki kolejnych władców Kremla zostało podważone i Berlin nie powróci do stanu zależności od dostaw gazu rosyjskiego sprzed roku 2021. Tym samym Moskwa nie będzie wywierać tak ogromnego wpływu na swoich partnerów jak dotychczas.
-Putin zniszczył nie tylko ważne narzędzie polityczne, jakie gospodarze Kremla przez dziesięciolecia mogli wykorzystywać w relacjach z Niemcami. Zrujnował również niezwykle dochodowy biznes, jakim był handel węglowodorami z Europą. Agresja na Ukrainę i zastosowanie broni gazowej katastrofalnie wpłynęły również na handel innymi surowcami, jakimi dysponowała Federacja Rosyjska. Sankcje dotknęły zarówno rosyjską ropę naftową, jak i węgiel kamienny. Warto przypomnieć, że przed wojną Rosja była najważniejszym dostawcą ropy naftowej i węgla kamiennego do Niemiec. Ogromne straty zarówno polityczne, jak i gospodarcze są więc nieodwracalne. Rosja przestanie być głównym zapleczem surowcowym Europy. Straci najważniejsze powiązanie, które ją z nią łączyło. Moskwa straci w ten sposób najważniejszy dla jej polityki zagranicznej wektor zachodni i będzie skazana na współpracę z Azją, głównie z Pekinem. Brak możliwości balansowania między Wschodem i Zachodem w niedługim czasie spowoduje, że Rosja ze względu na ogromną różnicę potencjałów stanie się satelitą Chin.
-Berlin zgodnie z logiką równań mocarstwowych po krachu partnerstwa z Moskwą szukał zbliżenia z Waszyngtonem, podporządkowując politykę wschodnią strategii Stanów Zjednoczonych. Podczas szczytu NATO w Wilnie w lipcu 2023 r. Niemcy wraz z Amerykanami zablokowali umieszczenie w komunikacie końcowym konkretnych ram czasowych członkostwa Ukrainy w NATO. Uczynili to wbrew proukraińskiej koalicji części mocarstw zachodnich, Francji i Wielkiej Brytanii, oraz krajów Europy Środkowej.
-Wojna na Ukrainie w konsekwencji osłabiła pozycję Niemiec względem Stanów Zjednoczonych i Rosji względem Chin. Z tego powodu obecny porządek w Europie Środkowej i Wschodniej trzeba traktować jako przejściowy. Trudno sobie wyobrazić, żeby w długiej strategicznej perspektywie Kreml zaakceptował satelicką zależność od Chin. Z tego samego powodu Niemcy dążyć będą do zmniejszenia zależności od Stanów Zjednoczonych i odzyskania przynajmniej częściowej możliwości manewru na Zachodzie. Należy się spodziewać, że w perspektywie długofalowej Berlin będzie starał się odzyskać wektor wschodni polityki zagranicznej, czyli odbudować relacje z Moskwą. Z kolei Rosja będzie próbowała odzyskać wektor zachodni, czyli przywrócić strategiczne relacje z państwami zachodnioeuropejskimi, które pozwolą jej na balansowanie pomiędzy eurazjatyckim Wschodem i Zachodem. Powrót do status quo sprzed agresji na Ukrainę nie dokona się jednak w ciągu najbliższych kilku lat. Związany on będzie nie tylko ze zmianą gospodarza Kremla, ale także rosyjskiej elity władzy. Obecnie bowiem Putin i jego drużyna znaleźli się w sytuacji bez wyjścia i skazani są na prowadzenie polityki antyzachodniej, której efektem jest pogłębianie się zależności od Chin. 
-</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- BLOG DETAILS END -->
+.article-text p {
+    margin-bottom: 1.5rem;
+}
 
-</body>
+.author-bio {
+    margin-top: 1rem;
+}
+</style>
 @endsection

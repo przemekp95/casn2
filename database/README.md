@@ -1,17 +1,17 @@
 # Database Directory
 
-Contains database-related files and migrations for the CASN Laravel application.
+Contains database-related files for the CASN Laravel application.
 
 ## Description
 
-This directory holds database migrations, seeders, and factories. Note that this application primarily uses static content routing rather than database-driven content.
+This directory holds database migrations, seeders, and factories. Note that this application uses static content routing and does not require an active database connection.
 
 ## Structure
 
-- `migrations/` - Database schema migrations
-- `seeders/` - Database seeders for initial data
-- `factories/` - Model factories for testing
+- `migrations/` - Database schema migrations (legacy)
+- `seeders/` - Database seeders (legacy)
+- `factories/` - Model factories (legacy)
 
 ## Getting Started
 
-Since this application uses static content, database migrations are minimal and mainly handle basic Laravel functionality.
+This application uses static content defined in routes and services. Database functionality has been removed in favor of hardcoded data structures.

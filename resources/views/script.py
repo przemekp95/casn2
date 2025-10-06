@@ -20,15 +20,7 @@ TEMPLATE = """
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
-                            <div class="home-page-title text-center">
-                                <h1 class="text-white mb-2">[TITLE]</h1>
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb justify-content-center bg-transparent">
-                                        <li class="breadcrumb-item text-white"><a href="/" class="text-white">Strona główna</a></li>
-                                        <li class="breadcrumb-item  active" aria-current="page"><a href="{{ url('/blog-details') }}" class="text-custom">[TITLE]</a></li>
-                                    </ol>
-                                </nav>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -156,4 +148,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

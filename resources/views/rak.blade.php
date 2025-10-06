@@ -13,10 +13,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
-                            <div class="home-page-title text-center">
-                                <h1 class="text-white mb-2">Polska między Rosją a Niemcami. Historia i wyzwania.</h1>
-                                
-                            </div>
+
                         </div>
                     </div>
                 </div>

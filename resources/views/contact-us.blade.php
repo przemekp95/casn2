@@ -5,8 +5,6 @@
 
 @section('content')
 
-<body>
-
     <!-- CONTACT US HOME START -->
     <section class="contact-us-home section" id="home">
         <div class="bg-overlay"></div>
@@ -15,15 +13,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
-                            <div class="home-page-title text-center">
-                                <h1 class="text-white mb-2">Kontakt</h1>
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb justify-content-center bg-transparent">
-                                        <li class="breadcrumb-item text-white"><a href="index.html" class="text-white">Strona główna</a></li>
-                                        <li class="breadcrumb-item  active" aria-current="page"><a href="contact-us.html" class="text-custom">Kontakt</a></li>
-                                    </ol>
-                                </nav>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -125,7 +115,4 @@
             </div>
         </div>
     </section>
-
-
-</body>
 @endsection

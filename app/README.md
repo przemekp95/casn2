@@ -4,14 +4,14 @@ Contains the core application code for the CASN Laravel project.
 
 ## Description
 
-This directory holds the main application logic including controllers, models, and other PHP classes.
+This directory holds the main application logic including controllers, services, and other PHP classes.
 
 ## Structure
 
 - `Http/Controllers/` - Web controllers handling HTTP requests
-- `Models/` - Eloquent models for database interactions
+- `Services/` - Business logic services
 - `Providers/` - Service providers for application bootstrapping
 
 ## Getting Started
 
-The application uses static content routing defined in `routes/web.php` rather than traditional MVC patterns.
+The application uses a hybrid approach with static content and service-based architecture. Controllers use services to access data instead of direct database queries.
