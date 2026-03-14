@@ -1,6 +1,6 @@
 # App Directory
 
-Contains the core application code for the CASN Laravel project.
+Contains the core application code for the Centrum Analiz Służby Niepodległej (CASN) Laravel project.
 
 ## Description
 

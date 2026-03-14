@@ -1,6 +1,6 @@
 # Database Directory
 
-Contains database-related files for the CASN Laravel application.
+Contains database-related files for the Centrum Analiz Służby Niepodległej (CASN) Laravel application.
 
 ## Description
 

@@ -29,7 +29,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="mo-mb-20">
-                        <img src="{{ asset('images/ikonka.webp') }}" class="img-fluid d-block mx-auto" alt="CASN - Centrum Analiz Strategicznych i Niejawnych">
+                        <img src="{{ asset('images/ikonka.webp') }}" class="img-fluid d-block mx-auto" alt="CASN - Centrum Analiz Służby Niepodległej">
                     </div>
                 </div>
 

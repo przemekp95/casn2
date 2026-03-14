@@ -1,8 +1,8 @@
 <?php
+
 /**
  * Comprehensive fix for ALL routing issues in ArticleController
  */
-
 echo "=== COMPREHENSIVE ROUTE FIX FOR ALL ARTICLES ===\n\n";
 
 // Read the current controller
@@ -35,13 +35,13 @@ for ($i = 0; $i < count($authorMatches[1]); $i++) {
 
             $authorArticles[$authorSlug][$title] = [
                 'slug' => $correctSlug,
-                'link' => $link
+                'link' => $link,
             ];
         }
     }
 }
 
-echo "Found " . count($authorArticles) . " authors with articles\n\n";
+echo 'Found '.count($authorArticles)." authors with articles\n\n";
 
 $fixes = [];
 $errors = [];
@@ -89,7 +89,7 @@ foreach ($authorArticles as $authorSlug => $articles) {
             'trabinskiartykul' => 'trabinskiArtykul',
             'dakowskiartykul' => 'dakowskiArtykul',
             'feszlertsue' => 'feszlerTsue',
-            'lewandowskisedziowie' => 'lewandowskiSedziowie'
+            'lewandowskisedziowie' => 'lewandowskiSedziowie',
         ];
 
         if (isset($methodNameMap[$methodName])) {
@@ -130,25 +130,25 @@ foreach ($authorArticles as $authorSlug => $articles) {
 // Write the fixed controller back
 file_put_contents('app/Http/Controllers/ArticleController.php', $controllerContent);
 
-echo str_repeat("=", 80) . "\n";
+echo str_repeat('=', 80)."\n";
 echo "=== COMPREHENSIVE FIX SUMMARY ===\n";
-echo str_repeat("=", 80) . "\n";
+echo str_repeat('=', 80)."\n";
 
-echo "\n✅ FIXES APPLIED (" . count($fixes) . "):\n";
+echo "\n✅ FIXES APPLIED (".count($fixes)."):\n";
 foreach ($fixes as $fix) {
     echo "  ✅ {$fix}\n";
 }
 
-if (!empty($errors)) {
-    echo "\n⚠️  ERRORS (" . count($errors) . "):\n";
+if (! empty($errors)) {
+    echo "\n⚠️  ERRORS (".count($errors)."):\n";
     foreach ($errors as $error) {
         echo "  ⚠️  {$error}\n";
     }
 }
 
-echo "\n" . str_repeat("=", 80) . "\n";
+echo "\n".str_repeat('=', 80)."\n";
 echo "🎉 ALL ROUTES HAVE BEEN COMPREHENSIVELY FIXED!\n";
-echo str_repeat("=", 80) . "\n";
+echo str_repeat('=', 80)."\n";
 
 // Test the fixes
 echo "\n=== TESTING FIXES ===\n\n";
@@ -158,7 +158,7 @@ $testRoutes = [
     'wot-balcerowski',
     'lewandowski-sedziowie',
     'rosolowski-energetyka',
-    'domanska-artykul'
+    'domanska-artykul',
 ];
 
 foreach ($testRoutes as $route) {
@@ -180,6 +180,6 @@ foreach ($testRoutes as $route) {
     }
 }
 
-echo "\n" . str_repeat("=", 80) . "\n";
+echo "\n".str_repeat('=', 80)."\n";
 echo "🎉 COMPREHENSIVE ROUTE FIX COMPLETED!\n";
-echo str_repeat("=", 80) . "\n";
+echo str_repeat('=', 80)."\n";

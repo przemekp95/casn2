@@ -1,8 +1,8 @@
 <?php
+
 /**
  * Test Balcerowski author and article specifically
  */
-
 echo "=== TESTING BALCEROWSKI AUTHOR AND ARTICLE ===\n\n";
 
 // Read AuthorService
@@ -63,6 +63,6 @@ if (file_exists($imagePath)) {
     echo "❌ Author image NOT found: {$imagePath}\n";
 }
 
-echo "\n" . str_repeat("=", 60) . "\n";
+echo "\n".str_repeat('=', 60)."\n";
 echo "=== TEST SUMMARY ===\n";
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";

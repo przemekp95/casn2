@@ -17,11 +17,9 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    
+
     // protected $table = 'users'; // Using default users table
 
-    
-    
     protected $fillable = [
         'name',
         'email',

@@ -46,6 +46,9 @@ jobs:
       - name: Verify routes
         run: php artisan route:list --except-vendor
 
+      - name: Run Pint
+        run: vendor/bin/pint --test
+
       - name: Run PHPUnit
         run: vendor/bin/phpunit
 

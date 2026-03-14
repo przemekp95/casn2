@@ -1,15 +1,15 @@
 <?php
+
 /**
  * Simple routing test script to check slug consistency
  * between ArticleController methods and AuthorService data
  */
-
 echo "=== CASN Website ROUTING Test ===\n\n";
 
 require_once 'app/Services/AuthorService.php';
 
 // Initialize AuthorService
-$authorService = new \App\Services\AuthorService();
+$authorService = new \App\Services\AuthorService;
 $authors = $authorService->getAllAuthors();
 
 $errors = [];
@@ -20,7 +20,7 @@ $success = [];
 $controllerFile = file_get_contents('app/Http/Controllers/ArticleController.php');
 preg_match_all('/public function ([a-zA-Z]+)\(\)\s*{\s*return \$this->showArticle\(\'([^\']+)\', \'([^\']+)\'\);/', $controllerFile, $matches);
 
-echo "Found " . count($matches[1]) . " article methods in ArticleController\n\n";
+echo 'Found '.count($matches[1])." article methods in ArticleController\n\n";
 
 for ($i = 0; $i < count($matches[1]); $i++) {
     $methodName = $matches[1][$i];
@@ -40,9 +40,10 @@ for ($i = 0; $i < count($matches[1]); $i++) {
         }
     }
 
-    if (!$author) {
+    if (! $author) {
         $errors[] = "Author '{$expectedAuthorSlug}' not found for method {$methodName}";
         echo "  ❌ Author not found\n";
+
         continue;
     }
 
@@ -56,7 +57,7 @@ for ($i = 0; $i < count($matches[1]); $i++) {
         }
     }
 
-    if (!$article) {
+    if (! $article) {
         // Find the article by title to get the correct slug
         $foundArticle = null;
         foreach ($author->articles as $articleData) {
@@ -89,34 +90,34 @@ for ($i = 0; $i < count($matches[1]); $i++) {
 }
 
 // Summary
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";
 echo "=== ROUTING TEST SUMMARY ===\n";
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";
 
-echo "\n✅ SUCCESSES (" . count($success) . "):\n";
+echo "\n✅ SUCCESSES (".count($success)."):\n";
 foreach ($success as $msg) {
     echo "  ✅ {$msg}\n";
 }
 
-if (!empty($warnings)) {
-    echo "\n⚠️  WARNINGS (" . count($warnings) . "):\n";
+if (! empty($warnings)) {
+    echo "\n⚠️  WARNINGS (".count($warnings)."):\n";
     foreach ($warnings as $msg) {
         echo "  ⚠️  {$msg}\n";
     }
 }
 
-if (!empty($errors)) {
-    echo "\n❌ ERRORS (" . count($errors) . "):\n";
+if (! empty($errors)) {
+    echo "\n❌ ERRORS (".count($errors)."):\n";
     foreach ($errors as $msg) {
         echo "  ❌ {$msg}\n";
     }
 }
 
-echo "\n" . str_repeat("=", 60) . "\n";
-echo "FINAL RESULT: ";
+echo "\n".str_repeat('=', 60)."\n";
+echo 'FINAL RESULT: ';
 if (empty($errors)) {
     echo "🎉 ALL ROUTES ARE CORRECT!\n";
 } else {
     echo "⚠️  SOME ROUTING ISSUES FOUND!\n";
 }
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";

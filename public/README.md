@@ -1,6 +1,6 @@
 # Public Directory
 
-Contains publicly accessible files for the CASN Laravel application.
+Contains publicly accessible files for the Centrum Analiz Służby Niepodległej (CASN) Laravel application.
 
 ## Description
 

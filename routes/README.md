@@ -1,6 +1,6 @@
 # Routes Directory
 
-Contains route definitions for the CASN Laravel application.
+Contains route definitions for the Centrum Analiz Służby Niepodległej (CASN) Laravel application.
 
 ## Description
 

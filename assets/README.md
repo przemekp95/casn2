@@ -1,6 +1,6 @@
 # Assets Directory
 
-Contains static assets for the CASN Laravel application.
+Contains static assets for the Centrum Analiz Służby Niepodległej (CASN) Laravel application.
 
 ## Description
 

@@ -1,6 +1,6 @@
 # Resources Directory
 
-Contains resource files for the CASN Laravel application.
+Contains resource files for the Centrum Analiz Służby Niepodległej (CASN) Laravel application.
 
 ## Description
 

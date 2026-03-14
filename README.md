@@ -1,6 +1,6 @@
 # CASN
 
-CASN is a Laravel 11 site for publishing static editorial content, author pages, and supporting informational pages. The project does not use a database for core content delivery: Blade views remain the source of truth for article bodies, while author and article metadata live in a central content registry.
+Centrum Analiz Służby Niepodległej (CASN) is a Laravel 11 site for publishing static editorial content, author pages, and supporting informational pages. The project does not use a database for core content delivery: Blade views remain the source of truth for article bodies, while author and article metadata live in a central content registry.
 
 ## Stack
 
@@ -86,6 +86,7 @@ All public URLs should be preserved when making content changes.
 Run the same checks locally that CI runs on GitHub Actions:
 
 ```bash
+vendor/bin/pint --test
 php artisan route:list --except-vendor
 vendor/bin/phpunit
 npm run build
@@ -96,6 +97,7 @@ npm audit
 For a single maintainer command, you can also run:
 
 ```bash
+composer lint
 composer qa
 ```
 

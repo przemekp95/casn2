@@ -1,8 +1,8 @@
 <?php
+
 /**
  * Final routing test - extract actual slugs from controller
  */
-
 echo "=== CASN Website ROUTING Test (Final) ===\n\n";
 
 // Read the controller file
@@ -11,7 +11,7 @@ $controllerContent = file_get_contents('app/Http/Controllers/ArticleController.p
 // Extract all showArticle calls with their parameters
 preg_match_all("/showArticle\('([^']+)',\s*'([^']+)'\)/", $controllerContent, $matches);
 
-echo "Found " . count($matches[1]) . " showArticle calls in controller\n\n";
+echo 'Found '.count($matches[1])." showArticle calls in controller\n\n";
 
 $errors = [];
 $success = [];
@@ -55,11 +55,11 @@ $expectedMethods = [
     'gieraArtykul', 'lempickaArtykul', 'okolowskiArtykul', 'wosArtykul', 'bruszewskiArtykul',
     'gursztynArtykul', 'rutkeArtykul', 'kitaArtykul', 'bochenekArtykul', 'horoszkoArtykul',
     'trochanowskaArtykul', 'swietlikArtykul', 'pietrArtykul', 'ratynskiArtykul', 'rakArtykul',
-    'rowinskiArtykul', 'trabinskiArtykul', 'dakowskiArtykul', 'feszlerTsue'
+    'rowinskiArtykul', 'trabinskiArtykul', 'dakowskiArtykul', 'feszlerTsue',
 ];
 
 $missingMethods = array_diff($expectedMethods, $foundMethods);
-if (!empty($missingMethods)) {
+if (! empty($missingMethods)) {
     echo "❌ MISSING METHODS:\n";
     foreach ($missingMethods as $missingMethod) {
         echo "   ❌ {$missingMethod}()\n";
@@ -68,45 +68,46 @@ if (!empty($missingMethods)) {
     echo "\n";
 }
 
-function getExpectedSlug($authorSlug, $articleSlug) {
+function getExpectedSlug($authorSlug, $articleSlug)
+{
     // This is a simplified check - in a real scenario you'd check against the database
     // For now, just return true if we have a reasonable expectation
     return strlen($articleSlug) > 10; // Basic validation
 }
 
 // Summary
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";
 echo "=== ROUTING TEST SUMMARY ===\n";
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";
 
-echo "\n✅ FOUND METHODS (" . count($foundMethods) . "):\n";
+echo "\n✅ FOUND METHODS (".count($foundMethods)."):\n";
 foreach ($foundMethods as $method) {
     echo "  ✅ {$method}()\n";
 }
 
-echo "\n✅ SUCCESSES (" . count($success) . "):\n";
+echo "\n✅ SUCCESSES (".count($success)."):\n";
 foreach ($success as $msg) {
     echo "  ✅ {$msg}\n";
 }
 
-if (!empty($errors)) {
-    echo "\n❌ ERRORS (" . count($errors) . "):\n";
+if (! empty($errors)) {
+    echo "\n❌ ERRORS (".count($errors)."):\n";
     foreach ($errors as $error) {
         echo "  ❌ {$error}\n";
     }
 }
 
-if (!empty($missingMethods)) {
-    echo "\n❌ MISSING METHODS (" . count($missingMethods) . "):\n";
+if (! empty($missingMethods)) {
+    echo "\n❌ MISSING METHODS (".count($missingMethods)."):\n";
     foreach ($missingMethods as $missingMethod) {
         echo "  ❌ {$missingMethod}()\n";
     }
 }
 
-echo "\n" . str_repeat("=", 60) . "\n";
+echo "\n".str_repeat('=', 60)."\n";
 if (empty($errors) && empty($missingMethods)) {
     echo "🎉 ALL ROUTES ARE WORKING!\n";
 } else {
     echo "⚠️  SOME ISSUES FOUND!\n";
 }
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";

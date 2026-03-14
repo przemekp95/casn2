@@ -23,7 +23,11 @@ Route::get('/autorzy', function () use ($authorService) {
 });
 
 foreach ($authorService->getAllArticles() as $article) {
-    Route::view($article['path'], $article['view']);
+    Route::get($article['path'], static function () use ($article) {
+        return view($article['view'], [
+            'pageTitle' => $article['title'],
+        ]);
+    });
 }
 
 Route::get('/sitemap.xml', function () use ($authorService, $staticPages) {
@@ -43,7 +47,7 @@ Route::get('/sitemap.xml', function () use ($authorService, $staticPages) {
 
     foreach ($authorService->getAllAuthors() as $author) {
         $urls[] = [
-            'loc' => url('/' . $author['slug']),
+            'loc' => url('/'.$author['slug']),
             'lastmod' => now()->toAtomString(),
         ];
 

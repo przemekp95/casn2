@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Polska suwerenność informacyjna a social media. Media (a)społecznościowe i ich rola w dyskursie publicznym')
+@section('title', 'Polska suwerenność informacyjna a social media. Media (a)społecznościowe i ich rola w dyskursie publicznym. Jak uniknąć zamknięcia w bańce filtrującej?')
 
 @section('content')
 <div class="container my-5">
@@ -8,7 +8,7 @@
         <div class="col-lg-12">
             <article class="article-content">
                 <header class="mb-4">
-                    <h1 class="display-4 mb-3">Polska suwerenność informacyjna a social media. Media (a)społecznościowe i ich rola w dyskursie publicznym</h1>
+                    <h1 class="display-4 mb-3">Polska suwerenność informacyjna a social media. Media (a)społecznościowe i ich rola w dyskursie publicznym. Jak uniknąć zamknięcia w bańce filtrującej?</h1>
 
                     <div class="article-meta mb-4">
                         <div class="d-flex align-items-center mb-3">

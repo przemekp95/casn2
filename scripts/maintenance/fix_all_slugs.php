@@ -1,8 +1,8 @@
 <?php
+
 /**
  * Fix all slug mismatches in ArticleController
  */
-
 echo "=== FIXING ALL SLUGS IN ARTICLE CONTROLLER ===\n\n";
 
 // Read current controller
@@ -22,7 +22,7 @@ if (count($titleMatches[1]) === count($slugMatches[1])) {
     }
 }
 
-echo "Found " . count($titleToSlug) . " title-to-slug mappings\n\n";
+echo 'Found '.count($titleToSlug)." title-to-slug mappings\n\n";
 
 $errors = [];
 $fixes = [];
@@ -77,22 +77,22 @@ for ($i = 0; $i < count($methodMatches[1]); $i++) {
 // Write the fixed controller back to file
 file_put_contents('app/Http/Controllers/ArticleController.php', $controllerContent);
 
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";
 echo "=== FIX SUMMARY ===\n";
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";
 
-echo "\n✅ FIXES APPLIED (" . count($fixes) . "):\n";
+echo "\n✅ FIXES APPLIED (".count($fixes)."):\n";
 foreach ($fixes as $fix) {
     echo "  ✅ {$fix}\n";
 }
 
-if (!empty($errors)) {
-    echo "\n⚠️  ERRORS (" . count($errors) . "):\n";
+if (! empty($errors)) {
+    echo "\n⚠️  ERRORS (".count($errors)."):\n";
     foreach ($errors as $error) {
         echo "  ⚠️  {$error}\n";
     }
 }
 
-echo "\n" . str_repeat("=", 60) . "\n";
+echo "\n".str_repeat('=', 60)."\n";
 echo "🎉 ALL SLUGS HAVE BEEN FIXED!\n";
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";

@@ -1,8 +1,8 @@
 <?php
+
 /**
  * Fix route definitions to match the corrected slugs
  */
-
 echo "=== FIXING ROUTE DEFINITIONS ===\n\n";
 
 // Read current routes
@@ -27,7 +27,7 @@ for ($i = 0; $i < count($matches[1]); $i++) {
     }
 }
 
-echo "Found " . count($slugMappings) . " method-to-slug mappings\n\n";
+echo 'Found '.count($slugMappings)." method-to-slug mappings\n\n";
 
 $fixes = [];
 
@@ -59,18 +59,18 @@ foreach ($slugMappings as $methodName => $correctSlug) {
 // Write the fixed routes back
 file_put_contents('routes/web.php', $routesContent);
 
-echo "\n" . str_repeat("=", 60) . "\n";
+echo "\n".str_repeat('=', 60)."\n";
 echo "=== ROUTE FIX SUMMARY ===\n";
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";
 
-echo "\n✅ ROUTE FIXES APPLIED (" . count($fixes) . "):\n";
+echo "\n✅ ROUTE FIXES APPLIED (".count($fixes)."):\n";
 foreach ($fixes as $fix) {
     echo "  ✅ {$fix}\n";
 }
 
-echo "\n" . str_repeat("=", 60) . "\n";
+echo "\n".str_repeat('=', 60)."\n";
 echo "🎉 ALL ROUTES HAVE BEEN FIXED!\n";
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";
 
 // Test the fixed routes
 echo "\n=== TESTING FIXED ROUTES ===\n\n";
@@ -96,6 +96,6 @@ foreach (array_slice($fixes, 0, 5) as $fix) {  // Test first 5 fixes
     }
 }
 
-echo "\n" . str_repeat("=", 60) . "\n";
+echo "\n".str_repeat('=', 60)."\n";
 echo "🎉 ROUTE FIX COMPLETED!\n";
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";

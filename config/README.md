@@ -1,6 +1,6 @@
 # Config Directory
 
-Contains configuration files for the CASN Laravel application.
+Contains configuration files for the Centrum Analiz Służby Niepodległej (CASN) Laravel application.
 
 ## Description
 

@@ -1,96 +1,96 @@
 <?php
+
 /**
  * Simple routing test - manually checking slugs
  */
-
 echo "=== CASN Website ROUTING Test (Manual) ===\n\n";
 
 // Define the correct slugs based on titles from AuthorService
 $correctSlugs = [
     'lewandowski' => [
-        'analiza-porownawcza-systemu-wyborow-sedziow-w-polsce-i-niemczech' => 'lewandowskiSedziowie'
+        'analiza-porownawcza-systemu-wyborow-sedziow-w-polsce-i-niemczech' => 'lewandowskiSedziowie',
     ],
     'rosolowski' => [
         'zielona-zmiana-w-polskiej-energetyce-w-swietle-polityki-klimatycznej-ue' => 'rosolowskiEnergetyka',
-        'polski-atom-pietnascie-lat-wahan-trzy-lata-dzialan' => 'rosolowskiAtom'
+        'polski-atom-pietnascie-lat-wahan-trzy-lata-dzialan' => 'rosolowskiAtom',
     ],
     'domanska' => [
-        'raport-dotyczacy-badania-wplyw-tozsamosci-wspolnotowej-i-wiedzy-ekonomicznej' => 'domanskaArtykul'
+        'raport-dotyczacy-badania-wplyw-tozsamosci-wspolnotowej-i-wiedzy-ekonomicznej' => 'domanskaArtykul',
     ],
     'kochan' => [
-        'obraz-polakow-w-publikacjach-portali-internetowych' => 'kochanArtykul'
+        'obraz-polakow-w-publikacjach-portali-internetowych' => 'kochanArtykul',
     ],
     'luczuk' => [
         'polska-suwerenność-informacyjna-a-social-media-media-a-spolecznosciowe' => 'luczukArtykul',
-        'jak-dlugi-cyfrowy-slad-po-sobie-zostawiamy-i-czym-to-grozi' => 'sladLuczuk'
+        'jak-dlugi-cyfrowy-slad-po-sobie-zostawiamy-i-czym-to-grozi' => 'sladLuczuk',
     ],
     'balcerowski' => [
         'wojska-obrony-terytorialnej-wot-w-latach-2016-2022-geneza-perspektywy-i-historia-kampanii-dyskredytacyjnej' => 'wotBalcerowski',
         'autorytety-a-mlodziez-analiza-przypadku-ojozefa-maria-bochenskiego' => 'balcerowskiMlodziez',
         'czy-polacy-potrzebuja-bialo-czerwonego-orbana' => 'balcerowskiWegry',
-        'o-pojeciu-nacjonalizm-wprowadzenie-czesc-i' => 'balcerowskiNacjonalizm'
+        'o-pojeciu-nacjonalizm-wprowadzenie-czesc-i' => 'balcerowskiNacjonalizm',
     ],
     'kochman' => [
         'rozwoj-otoczenia-instytucjonalnego-polityki-mlodziezowej-w-polsce-po-2015-roku' => 'kochmanArtykul',
-        'wplyw-nowelizacji-dyrektywy-w-sprawie-efektywnosci-energetycznej-epbd' => 'kochmanEpbd'
+        'wplyw-nowelizacji-dyrektywy-w-sprawie-efektywnosci-energetycznej-epbd' => 'kochmanEpbd',
     ],
     'giera' => [
-        'analiza-aktywnosci-mlodziezy-w-ramach-spoleczenstwa-obywatelskiego' => 'gieraArtykul'
+        'analiza-aktywnosci-mlodziezy-w-ramach-spoleczenstwa-obywatelskiego' => 'gieraArtykul',
     ],
     'lempicka-wyszynska' => [
-        'spieszmy-sie-rodzic-ludzi-dlaczego-polacy-wola-byc-childfree' => 'lempickaArtykul'
+        'spieszmy-sie-rodzic-ludzi-dlaczego-polacy-wola-byc-childfree' => 'lempickaArtykul',
     ],
     'okolowski' => [
-        'dwa-modele-uniwersytetu' => 'okolowskiArtykul'
+        'dwa-modele-uniwersytetu' => 'okolowskiArtykul',
     ],
     'wos' => [
-        'solidarnosc-2023' => 'wosArtykul'
+        'solidarnosc-2023' => 'wosArtykul',
     ],
     'bruszewski' => [
-        'rozwoj-sil-zbrojnych-rp-a-miedzynarodowe-geopolityczne-zmiany' => 'bruszewskiArtykul'
+        'rozwoj-sil-zbrojnych-rp-a-miedzynarodowe-geopolityczne-zmiany' => 'bruszewskiArtykul',
     ],
     'gursztyn' => [
-        'porazki-polskiej-polityki-wschodniej-lat-2007-2015' => 'gursztynArtykul'
+        'porazki-polskiej-polityki-wschodniej-lat-2007-2015' => 'gursztynArtykul',
     ],
     'rutke' => [
-        'europa-murami-podzielona' => 'rutkeArtykul'
+        'europa-murami-podzielona' => 'rutkeArtykul',
     ],
     'kita' => [
-        'francuska-polityka-migracyjna-i-wnioski-dla-polski' => 'kitaArtykul'
+        'francuska-polityka-migracyjna-i-wnioski-dla-polski' => 'kitaArtykul',
     ],
     'bochenek' => [
-        'europejskie-realia-prawno-karne' => 'bochenekArtykul'
+        'europejskie-realia-prawno-karne' => 'bochenekArtykul',
     ],
     'horoszko' => [
-        'szkola-marzen-pokolenia-z-o-problemach-i-potrzebach-polskich-uczniow' => 'horoszkoArtykul'
+        'szkola-marzen-pokolenia-z-o-problemach-i-potrzebach-polskich-uczniow' => 'horoszkoArtykul',
     ],
     'trochanowska' => [
-        'beata-trochanowska-seksualizacja-dzieci' => 'trochanowskaArtykul'
+        'beata-trochanowska-seksualizacja-dzieci' => 'trochanowskaArtykul',
     ],
     'swietlik' => [
-        'duch-eisensteina' => 'swietlikArtykul'
+        'duch-eisensteina' => 'swietlikArtykul',
     ],
     'pietr' => [
-        'specyfika-dzialalnosci-analitycznej-centralnego-biura-antykorupcyjnego' => 'pietrArtykul'
+        'specyfika-dzialalnosci-analitycznej-centralnego-biura-antykorupcyjnego' => 'pietrArtykul',
     ],
     'ratynski' => [
-        'strategiczne-aspekty-polskiego-bezpieczenstwa-zywnosciowego' => 'ratynskiArtykul'
+        'strategiczne-aspekty-polskiego-bezpieczenstwa-zywnosciowego' => 'ratynskiArtykul',
     ],
     'rak' => [
-        'polska-miedzy-rosja-a-niemcami-historia-i-wyzwania' => 'rakArtykul'
+        'polska-miedzy-rosja-a-niemcami-historia-i-wyzwania' => 'rakArtykul',
     ],
     'rowinski' => [
-        'przemija-postac-swiata-o-koncu-epoki-wojtylianskiej' => 'rowinskiArtykul'
+        'przemija-postac-swiata-o-koncu-epoki-wojtylianskiej' => 'rowinskiArtykul',
     ],
     'trabinski' => [
-        'o-potrzebie-zachowania-polskiego-zlotego-przyszlosc-polskiej-waluty' => 'trabinskiArtykul'
+        'o-potrzebie-zachowania-polskiego-zlotego-przyszlosc-polskiej-waluty' => 'trabinskiArtykul',
     ],
     'dakowski' => [
-        'komunikacja-wizualna-wczoraj-i-dzis' => 'dakowskiArtykul'
+        'komunikacja-wizualna-wczoraj-i-dzis' => 'dakowskiArtykul',
     ],
     'feszler' => [
-        'sprawa-c-819-21' => 'feszlerTsue'
-    ]
+        'sprawa-c-819-21' => 'feszlerTsue',
+    ],
 ];
 
 $errors = [];
@@ -132,26 +132,26 @@ foreach ($correctSlugs as $authorSlug => $articles) {
 }
 
 // Summary
-echo "\n" . str_repeat("=", 60) . "\n";
+echo "\n".str_repeat('=', 60)."\n";
 echo "=== ROUTING TEST SUMMARY ===\n";
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";
 
-echo "\n✅ CORRECT METHODS (" . count($success) . "):\n";
+echo "\n✅ CORRECT METHODS (".count($success)."):\n";
 foreach ($success as $msg) {
     echo "  {$msg}\n";
 }
 
-if (!empty($errors)) {
-    echo "\n❌ METHODS NEEDING FIXES (" . count($errors) . "):\n";
+if (! empty($errors)) {
+    echo "\n❌ METHODS NEEDING FIXES (".count($errors)."):\n";
     foreach ($errors as $error) {
         echo "  ❌ {$error}\n";
     }
 }
 
-echo "\n" . str_repeat("=", 60) . "\n";
+echo "\n".str_repeat('=', 60)."\n";
 if (empty($errors)) {
     echo "🎉 ALL ROUTES ARE CORRECT!\n";
 } else {
     echo "⚠️  SOME ROUTES NEED FIXING!\n";
 }
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";

@@ -1,3 +1,15 @@
+@php
+    $defaultTitle = 'CASN - Centrum Analiz Służby Niepodległej';
+    $defaultDescription = 'Centrum Analiz Służby Niepodległej (CASN) publikuje teksty i analizy dotyczące bezpieczeństwa, gospodarki oraz polityki międzynarodowej.';
+    $defaultKeywords = 'CASN, analizy, bezpieczeństwo, gospodarka, polityka międzynarodowa, Polska';
+    $rawTitle = trim($__env->yieldContent('title', $pageTitle ?? $defaultTitle));
+    $resolvedTitle = $rawTitle === ''
+        ? $defaultTitle
+        : (str_contains($rawTitle, 'CASN') ? $rawTitle : $rawTitle . ' - CASN');
+    $resolvedDescription = trim($__env->yieldContent('description', $pageDescription ?? $defaultDescription));
+    $resolvedKeywords = trim($__env->yieldContent('keywords', $pageKeywords ?? $defaultKeywords));
+@endphp
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -5,27 +17,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Primary Meta Tags -->
-    <title>@yield('title', 'CASN - Centrum Analiz Strategicznych i Niejawnych')</title>
-    <meta name="title" content="@yield('title', 'CASN - Centrum Analiz Strategicznych i Niejawnych')">
-    <meta name="description" content="@yield('description', 'Centrum Analiz Strategicznych i Niejawnych (CASN) to think tank skupiający ekspertów z różnych dziedzin, publikujący analizy z zakresu bezpieczeństwa, gospodarki i polityki międzynarodowej.')">
-    <meta name="keywords" content="@yield('keywords', 'CASN, analizy strategiczne, bezpieczeństwo, polityka międzynarodowa, think tank, Polska')">
+    <title>{{ $resolvedTitle }}</title>
+    <meta name="title" content="{{ $resolvedTitle }}">
+    <meta name="description" content="{{ $resolvedDescription }}">
+    <meta name="keywords" content="{{ $resolvedKeywords }}">
     <meta name="robots" content="index, follow">
     <meta name="language" content="Polish">
-    <meta name="author" content="Centrum Analiz Strategicznych i Niejawnych">
+    <meta name="author" content="Centrum Analiz Służby Niepodległej">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="@yield('title', 'CASN - Centrum Analiz Strategicznych i Niejawnych')">
-    <meta property="og:description" content="@yield('description', 'Centrum Analiz Strategicznych i Niejawnych (CASN) to think tank skupiający ekspertów z różnych dziedzin, publikujący analizy z zakresu bezpieczeństwa, gospodarki i polityki międzynarodowej.')">
+    <meta property="og:title" content="{{ $resolvedTitle }}">
+    <meta property="og:description" content="{{ $resolvedDescription }}">
     <meta property="og:image" content="{{ asset('images/logo.jpg') }}">
     <meta property="og:site_name" content="CASN">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ url()->current() }}">
-    <meta property="twitter:title" content="@yield('title', 'CASN - Centrum Analiz Strategicznych i Niejawnych')">
-    <meta property="twitter:description" content="@yield('description', 'Centrum Analiz Strategicznych i Niejawnych (CASN) to think tank skupiający ekspertów z różnych dziedzin, publikujący analizy z zakresu bezpieczeństwa, gospodarki i polityki międzynarodowej.')">
+    <meta property="twitter:title" content="{{ $resolvedTitle }}">
+    <meta property="twitter:description" content="{{ $resolvedDescription }}">
     <meta property="twitter:image" content="{{ asset('images/logo.jpg') }}">
 
     <!-- Favicon -->
@@ -62,10 +74,10 @@
     {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Centrum Analiz Strategicznych i Niejawnych (CASN)",
+        "name": "Centrum Analiz Służby Niepodległej (CASN)",
         "url": "{{ url('/') }}",
         "logo": "{{ asset('images/logo.jpg') }}",
-        "description": "Think tank skupiający ekspertów z różnych dziedzin, publikujący analizy z zakresu bezpieczeństwa, gospodarki i polityki międzynarodowej.",
+        "description": "Centrum Analiz Służby Niepodległej publikuje teksty i analizy dotyczące bezpieczeństwa, gospodarki oraz polityki międzynarodowej.",
         "sameAs": [
             "{{ url('/') }}"
         ],

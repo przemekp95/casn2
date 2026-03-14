@@ -1,6 +1,6 @@
 # Bootstrap Directory
 
-Contains bootstrap files for the CASN Laravel application.
+Contains bootstrap files for the Centrum Analiz Służby Niepodległej (CASN) Laravel application.
 
 ## Description
 

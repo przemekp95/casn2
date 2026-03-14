@@ -52,8 +52,12 @@
             "@php artisan route:list --except-vendor",
             "@php vendor/bin/phpunit"
         ],
+        "lint": [
+            "@php vendor/bin/pint --test"
+        ],
         "qa": [
             "Composer\\Config::disableProcessTimeout",
+            "@lint",
             "@test",
             "npm run build",
             "composer audit --locked",

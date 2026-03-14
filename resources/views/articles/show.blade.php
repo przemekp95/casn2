@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('title', $author->name . ' - ' . $article->title)
-@section('description', 'Artykuł autorstwa ' . $author->name . ' pt. "' . $article->title . '" - analiza opublikowana w Centrum Analiz Strategicznych i Niejawnych (CASN)')
-@section('keywords', 'CASN, ' . strtolower($author->name) . ', ' . strtolower(str_replace(' ', ', ', $article->title)) . ', analizy strategiczne')
+@section('description', 'Artykuł autorstwa ' . $author->name . ' pt. "' . $article->title . '" opublikowany w Centrum Analiz Służby Niepodległej (CASN)')
+@section('keywords', 'CASN, ' . strtolower($author->name) . ', ' . strtolower(str_replace(' ', ', ', $article->title)) . ', analizy')
 
 @section('content')
 <!-- ARTICLE HERO SECTION START -->

@@ -1,6 +1,6 @@
 # Storage Directory
 
-Contains application storage files for the CASN Laravel application.
+Contains application storage files for the Centrum Analiz Służby Niepodległej (CASN) Laravel application.
 
 ## Description
 

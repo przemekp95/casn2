@@ -1,9 +1,9 @@
 <?php
+
 /**
  * Comprehensive test script for CASN website
  * Tests ALL authors, ALL articles, ALL routes and content loading
  */
-
 echo "=== CASN Website COMPREHENSIVE Test - ALL DATA ===\n\n";
 
 $errors = [];
@@ -14,11 +14,11 @@ $success = [];
 echo "1. Testing basic Laravel functionality...\n";
 try {
     $authorService = app(\App\Services\AuthorService::class);
-    $success[] = "AuthorService loaded successfully";
+    $success[] = 'AuthorService loaded successfully';
     echo "✅ AuthorService loaded successfully\n";
 } catch (Exception $e) {
-    $errors[] = "Failed to load AuthorService: " . $e->getMessage();
-    echo "❌ Failed to load AuthorService: " . $e->getMessage() . "\n";
+    $errors[] = 'Failed to load AuthorService: '.$e->getMessage();
+    echo '❌ Failed to load AuthorService: '.$e->getMessage()."\n";
     exit(1);
 }
 
@@ -43,13 +43,13 @@ try {
         if (empty($author->photo)) {
             $warnings[] = "Author {$authorSlug} has no photo";
         }
-        if (empty($author->articles) || !is_array($author->articles)) {
+        if (empty($author->articles) || ! is_array($author->articles)) {
             $errors[] = "Author {$authorSlug} has no articles array";
         }
     }
 } catch (Exception $e) {
-    $errors[] = "Failed to load authors: " . $e->getMessage();
-    echo "❌ Failed to load authors: " . $e->getMessage() . "\n";
+    $errors[] = 'Failed to load authors: '.$e->getMessage();
+    echo '❌ Failed to load authors: '.$e->getMessage()."\n";
 }
 
 // Test 3: Test EVERY SINGLE ARTICLE for EVERY author
@@ -66,6 +66,7 @@ try {
         if (empty($author->articles)) {
             $warnings[] = "Author {$authorSlug} has no articles";
             echo "  ⚠️  No articles found\n";
+
             continue;
         }
 
@@ -73,29 +74,37 @@ try {
             $totalArticles++;
 
             // Validate article fields
-            $hasTitle = !empty($article->title);
-            $hasContent = !empty($article->content) && strlen($article->content) > 50;
-            $hasExcerpt = !empty($article->excerpt) && strlen($article->excerpt) > 20;
-            $hasLink = !empty($article->link) && strlen($article->link) > 5;
-            $hasSlug = !empty($article->slug) && strlen($article->slug) > 5;
+            $hasTitle = ! empty($article->title);
+            $hasContent = ! empty($article->content) && strlen($article->content) > 50;
+            $hasExcerpt = ! empty($article->excerpt) && strlen($article->excerpt) > 20;
+            $hasLink = ! empty($article->link) && strlen($article->link) > 5;
+            $hasSlug = ! empty($article->slug) && strlen($article->slug) > 5;
 
-            if ($hasTitle) $success[] = "Article {$articleIndex} for {$authorSlug} has title";
-            if ($hasContent) $articlesWithContent++;
-            if ($hasExcerpt) $articlesWithExcerpt++;
-            if ($hasLink) $articlesWithLinks++;
+            if ($hasTitle) {
+                $success[] = "Article {$articleIndex} for {$authorSlug} has title";
+            }
+            if ($hasContent) {
+                $articlesWithContent++;
+            }
+            if ($hasExcerpt) {
+                $articlesWithExcerpt++;
+            }
+            if ($hasLink) {
+                $articlesWithLinks++;
+            }
 
-            echo "  Article " . ($articleIndex + 1) . ": {$article->title}\n";
-            echo "    ✅ Title: " . ($hasTitle ? '✅' : '❌') . "\n";
-            echo "    ✅ Content: " . ($hasContent ? '✅' : '❌') . " ({$hasContent})\n";
-            echo "    ✅ Excerpt: " . ($hasExcerpt ? '✅' : '❌') . "\n";
-            echo "    ✅ Link: " . ($hasLink ? '✅' : '❌') . " ({$article->link})\n";
-            echo "    ✅ Slug: " . ($hasSlug ? '✅' : '❌') . "\n";
+            echo '  Article '.($articleIndex + 1).": {$article->title}\n";
+            echo '    ✅ Title: '.($hasTitle ? '✅' : '❌')."\n";
+            echo '    ✅ Content: '.($hasContent ? '✅' : '❌')." ({$hasContent})\n";
+            echo '    ✅ Excerpt: '.($hasExcerpt ? '✅' : '❌')."\n";
+            echo '    ✅ Link: '.($hasLink ? '✅' : '❌')." ({$article->link})\n";
+            echo '    ✅ Slug: '.($hasSlug ? '✅' : '❌')."\n";
 
             // Check for specific issues
-            if (!$hasContent && strpos($article->content, 'Treść analizy zostanie wkrótce dodana') !== false) {
+            if (! $hasContent && strpos($article->content, 'Treść analizy zostanie wkrótce dodana') !== false) {
                 $warnings[] = "Article '{$article->title}' still has placeholder content";
             }
-            if (!$hasExcerpt) {
+            if (! $hasExcerpt) {
                 $warnings[] = "Article '{$article->title}' has no excerpt";
             }
         }
@@ -108,8 +117,8 @@ try {
     echo "  With links: {$articlesWithLinks}\n";
 
 } catch (Exception $e) {
-    $errors[] = "Failed to test articles: " . $e->getMessage();
-    echo "❌ Failed to test articles: " . $e->getMessage() . "\n";
+    $errors[] = 'Failed to test articles: '.$e->getMessage();
+    echo '❌ Failed to test articles: '.$e->getMessage()."\n";
 }
 
 // Test 4: Test ALL routes
@@ -125,7 +134,7 @@ try {
         $methods = $route->methods()[0];
 
         if (strpos($uri, '/') === 0 && $uri !== '/' && $uri !== '{author}' &&
-            !in_array($uri, ['kontakt', 'autorzy', 'zbiory', 'blog-list', 'blog-details', 'team-details', 'sitemap.xml'])) {
+            ! in_array($uri, ['kontakt', 'autorzy', 'zbiory', 'blog-list', 'blog-details', 'team-details', 'sitemap.xml'])) {
             $articleRoutes[] = $uri;
             echo "✅ Article route: {$methods} {$uri}\n";
         } elseif ($uri === '{author}') {
@@ -135,12 +144,12 @@ try {
         }
     }
 
-    $success[] = "Found " . count($articleRoutes) . " article routes and {$authorRoutes} author route";
-    echo "✅ Found " . count($articleRoutes) . " article routes and {$authorRoutes} author route\n";
+    $success[] = 'Found '.count($articleRoutes)." article routes and {$authorRoutes} author route";
+    echo '✅ Found '.count($articleRoutes)." article routes and {$authorRoutes} author route\n";
 
 } catch (Exception $e) {
-    $errors[] = "Failed to test routes: " . $e->getMessage();
-    echo "❌ Failed to test routes: " . $e->getMessage() . "\n";
+    $errors[] = 'Failed to test routes: '.$e->getMessage();
+    echo '❌ Failed to test routes: '.$e->getMessage()."\n";
 }
 
 // Test 5: Test content quality
@@ -154,7 +163,7 @@ try {
             $contentTests++;
 
             // Test content quality
-            $isRealContent = !empty($article->content) &&
+            $isRealContent = ! empty($article->content) &&
                            strlen($article->content) > 100 &&
                            strpos($article->content, 'Treść analizy zostanie wkrótce dodana') === false;
 
@@ -180,8 +189,8 @@ try {
     echo "📊 Content Quality: {$contentPassed}/{$contentTests} articles have good content\n";
 
 } catch (Exception $e) {
-    $errors[] = "Failed to test content quality: " . $e->getMessage();
-    echo "❌ Failed to test content quality: " . $e->getMessage() . "\n";
+    $errors[] = 'Failed to test content quality: '.$e->getMessage();
+    echo '❌ Failed to test content quality: '.$e->getMessage()."\n";
 }
 
 // Test 6: Test data integrity
@@ -194,10 +203,10 @@ try {
         $integrityTests++;
 
         // Test author data integrity
-        $authorValid = !empty($author->name) &&
-                      !empty($author->slug) &&
-                      !empty($author->bio) &&
-                      !empty($author->photo) &&
+        $authorValid = ! empty($author->name) &&
+                      ! empty($author->slug) &&
+                      ! empty($author->bio) &&
+                      ! empty($author->photo) &&
                       is_array($author->articles);
 
         if ($authorValid) {
@@ -210,9 +219,9 @@ try {
 
         // Test each article integrity
         foreach ($author->articles as $articleIndex => $article) {
-            $articleValid = !empty($article->title) &&
-                           !empty($article->link) &&
-                           !empty($article->slug) &&
+            $articleValid = ! empty($article->title) &&
+                           ! empty($article->link) &&
+                           ! empty($article->slug) &&
                            isset($article->content) &&
                            isset($article->excerpt);
 
@@ -228,8 +237,8 @@ try {
     echo "📊 Data Integrity: {$integrityPassed}/{$integrityTests} authors have complete data\n";
 
 } catch (Exception $e) {
-    $errors[] = "Failed to test data integrity: " . $e->getMessage();
-    echo "❌ Failed to test data integrity: " . $e->getMessage() . "\n";
+    $errors[] = 'Failed to test data integrity: '.$e->getMessage();
+    echo '❌ Failed to test data integrity: '.$e->getMessage()."\n";
 }
 
 // Test 7: Test cross-references
@@ -243,7 +252,7 @@ try {
             $crossRefTests++;
 
             // Test if article link matches expected pattern
-            $expectedLink = '/' . $authorSlug . '-' . $article->slug;
+            $expectedLink = '/'.$authorSlug.'-'.$article->slug;
             $linkMatches = strpos($article->link, $authorSlug) !== false;
 
             if ($linkMatches) {
@@ -259,39 +268,39 @@ try {
     echo "📊 Cross-references: {$crossRefPassed}/{$crossRefTests} links are consistent\n";
 
 } catch (Exception $e) {
-    $errors[] = "Failed to test cross-references: " . $e->getMessage();
-    echo "❌ Failed to test cross-references: " . $e->getMessage() . "\n";
+    $errors[] = 'Failed to test cross-references: '.$e->getMessage();
+    echo '❌ Failed to test cross-references: '.$e->getMessage()."\n";
 }
 
 // Final Summary
-echo "\n" . str_repeat("=", 60) . "\n";
+echo "\n".str_repeat('=', 60)."\n";
 echo "=== COMPREHENSIVE TEST SUMMARY ===\n";
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";
 
-echo "\n✅ SUCCESSES (" . count($success) . "):\n";
+echo "\n✅ SUCCESSES (".count($success)."):\n";
 foreach ($success as $msg) {
     echo "  ✅ {$msg}\n";
 }
 
-if (!empty($warnings)) {
-    echo "\n⚠️  WARNINGS (" . count($warnings) . "):\n";
+if (! empty($warnings)) {
+    echo "\n⚠️  WARNINGS (".count($warnings)."):\n";
     foreach ($warnings as $msg) {
         echo "  ⚠️  {$msg}\n";
     }
 }
 
-if (!empty($errors)) {
-    echo "\n❌ ERRORS (" . count($errors) . "):\n";
+if (! empty($errors)) {
+    echo "\n❌ ERRORS (".count($errors)."):\n";
     foreach ($errors as $msg) {
         echo "  ❌ {$msg}\n";
     }
 }
 
-echo "\n" . str_repeat("=", 60) . "\n";
-echo "FINAL RESULT: ";
+echo "\n".str_repeat('=', 60)."\n";
+echo 'FINAL RESULT: ';
 if (empty($errors)) {
     echo "🎉 ALL TESTS PASSED! Website is fully functional.\n";
 } else {
     echo "⚠️  SOME ISSUES FOUND! Check errors above.\n";
 }
-echo str_repeat("=", 60) . "\n";
+echo str_repeat('=', 60)."\n";

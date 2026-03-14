@@ -1,6 +1,6 @@
 # Tests Directory
 
-Contains test files for the CASN Laravel application.
+Contains test files for the Centrum Analiz Służby Niepodległej (CASN) Laravel application.
 
 ## Description
 
