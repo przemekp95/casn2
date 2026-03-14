@@ -6,6 +6,21 @@ use Tests\TestCase;
 
 class ContentRegistryTest extends TestCase
 {
+    public function test_author_source_files_match_registry_order_and_slugs(): void
+    {
+        $orderedSlugs = require base_path('content/authors/index.php');
+        $authors = config('content.authors');
+
+        $this->assertSame(array_keys($authors), $orderedSlugs);
+
+        foreach ($orderedSlugs as $slug) {
+            $file = base_path("content/authors/{$slug}.php");
+
+            $this->assertFileExists($file);
+            $this->assertSame($slug, (require $file)['slug']);
+        }
+    }
+
     public function test_author_slugs_are_keyed_consistently(): void
     {
         $authors = config('content.authors');

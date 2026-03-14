@@ -37,7 +37,7 @@ The application is primarily static, so no database setup is required for normal
 
 ## Content Model
 
-The project uses a single metadata registry in [`config/content.php`](config/content.php).
+The project uses a single metadata registry entry point in [`config/content.php`](config/content.php), which loads ordered author records from [`content/authors/index.php`](content/authors/index.php) and the per-author files in [`content/authors`](content/authors).
 
 - `authors[slug]` stores `name`, `bio`, `photo`, `slug`, and `articles`
 - each article entry stores `slug`, `title`, `path`, and `view`
@@ -66,7 +66,7 @@ All public URLs should be preserved when making content changes.
 ### Add a new article for an existing author
 
 1. Create the Blade view in `resources/views`, for example `resources/views/nowy-artykul.blade.php`.
-2. Add the article metadata to the correct author in [`config/content.php`](config/content.php).
+2. Add the article metadata to the correct author file in [`content/authors`](content/authors).
 3. Set:
    - `slug` to the article identifier
    - `title` to the user-facing title
@@ -76,7 +76,7 @@ All public URLs should be preserved when making content changes.
 
 ### Add a new author
 
-1. Add a new author entry in [`config/content.php`](config/content.php).
+1. Add a new author file in [`content/authors`](content/authors) and add its slug to [`content/authors/index.php`](content/authors/index.php) in the position where it should appear on the site.
 2. Place the author image in `public/images`.
 3. Make sure the `photo` path points to that image, for example `/images/autor.png`.
 4. Add at least one article entry or leave `articles` as an empty array if the author page should exist before publication.
@@ -91,6 +91,12 @@ vendor/bin/phpunit
 npm run build
 composer audit --locked
 npm audit
+```
+
+For a single maintainer command, you can also run:
+
+```bash
+composer qa
 ```
 
 ## CI
