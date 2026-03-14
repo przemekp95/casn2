@@ -1,5 +1,7 @@
 <?php
 
+use App\Services\AuthorService;
+
 /**
  * Simple routing test script to check slug consistency
  * between ArticleController methods and AuthorService data
@@ -9,7 +11,7 @@ echo "=== CASN Website ROUTING Test ===\n\n";
 require_once 'app/Services/AuthorService.php';
 
 // Initialize AuthorService
-$authorService = new \App\Services\AuthorService;
+$authorService = new AuthorService;
 $authors = $authorService->getAllAuthors();
 
 $errors = [];

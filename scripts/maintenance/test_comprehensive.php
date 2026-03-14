@@ -1,5 +1,7 @@
 <?php
 
+use App\Services\AuthorService;
+
 /**
  * Comprehensive test script for CASN website
  * Tests ALL authors, ALL articles, ALL routes and content loading
@@ -13,7 +15,7 @@ $success = [];
 // Test 1: Check if Laravel is working
 echo "1. Testing basic Laravel functionality...\n";
 try {
-    $authorService = app(\App\Services\AuthorService::class);
+    $authorService = app(AuthorService::class);
     $success[] = 'AuthorService loaded successfully';
     echo "✅ AuthorService loaded successfully\n";
 } catch (Exception $e) {

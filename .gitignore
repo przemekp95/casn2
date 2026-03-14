@@ -3,6 +3,7 @@
 /public/storage/
 /public/hot/
 /public/build/
+/storage/phpstan/
 /storage/*.key
 .env
 .env.backup

@@ -1,12 +1,14 @@
 <?php
 
+use A17\Twill\Facades\TwillBlocks;
+use A17\Twill\Models\Block;
 use Illuminate\Database\Migrations\Migration;
 
 return new class extends Migration
 {
     public function up(): void
     {
-        $blockList = \A17\Twill\Facades\TwillBlocks::getAll();
+        $blockList = TwillBlocks::getAll();
 
         $mapping = [];
 
@@ -16,7 +18,7 @@ return new class extends Migration
             }
         }
 
-        \A17\Twill\Models\Block::each(function (\A17\Twill\Models\Block $block) use ($mapping) {
+        Block::each(function (Block $block) use ($mapping) {
             if (isset($mapping[$block->type])) {
                 $block->type = $mapping[$block->type];
                 $block->save();

@@ -2,6 +2,9 @@
 
 namespace Tests\Feature;
 
+use FilesystemIterator;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
 use Tests\TestCase;
 
 class ContentRegistryTest extends TestCase
@@ -64,6 +67,47 @@ class ContentRegistryTest extends TestCase
     {
         foreach (config('content.authors') as $author) {
             $this->assertFileExists(public_path(ltrim($author['photo'], '/')));
+        }
+    }
+
+    public function test_active_view_directory_contains_only_blade_templates(): void
+    {
+        foreach ($this->viewFiles() as $file) {
+            $this->assertStringEndsWith('.blade.php', $file->getFilename(), sprintf('Unexpected non-Blade file in resources/views: [%s].', $file->getPathname()));
+        }
+    }
+
+    public function test_active_blade_templates_do_not_contain_debug_helpers(): void
+    {
+        foreach ($this->viewFiles() as $file) {
+            if (! str_ends_with($file->getFilename(), '.blade.php')) {
+                continue;
+            }
+
+            $contents = file_get_contents($file->getPathname());
+
+            $this->assertIsString($contents);
+            $this->assertDoesNotMatchRegularExpression(
+                '/\b(?:dd|dump|var_dump)\s*\(/',
+                $contents,
+                sprintf('Unexpected debug helper found in view [%s].', $file->getPathname())
+            );
+        }
+    }
+
+    /**
+     * @return iterable<\SplFileInfo>
+     */
+    private function viewFiles(): iterable
+    {
+        $iterator = new RecursiveIteratorIterator(
+            new RecursiveDirectoryIterator(resource_path('views'), FilesystemIterator::SKIP_DOTS)
+        );
+
+        foreach ($iterator as $file) {
+            if ($file->isFile()) {
+                yield $file;
+            }
         }
     }
 }

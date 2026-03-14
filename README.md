@@ -89,6 +89,7 @@ Run the same checks locally that CI runs on GitHub Actions:
 vendor/bin/pint --test
 php artisan route:list --except-vendor
 vendor/bin/phpunit
+composer analyse
 npm run build
 composer audit --locked
 npm audit
@@ -108,6 +109,8 @@ GitHub Actions workflow configuration lives in [`.github/workflows/ci.yml`](.git
 ## Maintenance Scripts
 
 One-off maintenance scripts have been moved to [`scripts/maintenance`](scripts/maintenance). They are not part of the runtime application and should be treated as maintainer tooling only. Some of them target the pre-registry routing architecture and are kept as archival references, not as supported developer commands.
+
+Historical prototypes and stray files that used to live in runtime directories are stored in [`scripts/maintenance/archive`](scripts/maintenance/archive) so they do not clutter the active application surface.
 
 ## Security
 
