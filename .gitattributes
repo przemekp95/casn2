@@ -1,0 +1,2 @@
+# Exclude Blade templates from GitHub Linguist language statistics.
+*.blade.php linguist-generated=true

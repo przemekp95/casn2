@@ -2,20 +2,26 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Security fixes are applied to the current code on the `main` branch.
+Older snapshots, forks, and unmaintained deployments should not be assumed to
+receive security updates.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Version | Supported |
+| ------- | --------- |
+| `main`  | Yes       |
+| older commits and custom forks | No |
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+Please do not open a public issue for suspected vulnerabilities.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+If GitHub private vulnerability reporting is enabled for this repository, use
+that channel. Otherwise, contact the maintainer privately through GitHub with:
+
+- a short description of the issue
+- steps to reproduce it
+- the affected route, page, or feature
+- any proof of concept or logs that help confirm impact
+
+After verification, the fix will be prepared and the public disclosure can
+follow once users have had a chance to update.
