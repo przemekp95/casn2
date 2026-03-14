@@ -35,6 +35,13 @@ npm run dev
 
 The application is primarily static, so no database setup is required for normal development and testing.
 
+## Webroot
+
+The canonical Laravel webroot is [`public`](public). The repository root keeps a
+small compatibility layer for shared-hosting setups that cannot point the
+document root directly at `public`, but static assets should live only under
+`public/`.
+
 ## Content Model
 
 The project uses a single metadata registry entry point in [`config/content.php`](config/content.php), which loads ordered author records from [`content/authors/index.php`](content/authors/index.php) and the per-author files in [`content/authors`](content/authors).

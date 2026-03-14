@@ -4,12 +4,17 @@ SecRequestBodyAccess Off
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # Zezwól na bezpośredni dostęp do plików w katalogu /storage
-    RewriteCond %{REQUEST_URI} ^/storage/ [NC]
-    RewriteCond %{REQUEST_FILENAME} -f
-    RewriteRule ^ - [L]
+    # Shared-hosting compatibility: when the repository root is the document
+    # root, serve canonical public assets from /public instead of duplicating
+    # css/js/images/fonts in the top-level directory.
+    RewriteCond %{REQUEST_URI} !^/public/ [NC]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f [OR]
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -d
+    RewriteRule ^(.*)$ public/$1 [L]
 
-    # Laravel: Przekierowanie wszystkich innych zapytań na index.php
+    # Laravel front controller for shared-hosting document roots.
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^ index.php [L]

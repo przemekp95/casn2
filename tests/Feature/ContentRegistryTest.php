@@ -95,6 +95,29 @@ class ContentRegistryTest extends TestCase
         }
     }
 
+    public function test_active_blade_templates_do_not_reference_public_prefixed_assets(): void
+    {
+        foreach ($this->viewFiles() as $file) {
+            if (! str_ends_with($file->getFilename(), '.blade.php')) {
+                continue;
+            }
+
+            $contents = file_get_contents($file->getPathname());
+
+            $this->assertIsString($contents);
+            $this->assertStringNotContainsString(
+                "asset('public/",
+                $contents,
+                sprintf('Unexpected public-prefixed asset path found in view [%s].', $file->getPathname())
+            );
+            $this->assertStringNotContainsString(
+                'asset("public/',
+                $contents,
+                sprintf('Unexpected public-prefixed asset path found in view [%s].', $file->getPathname())
+            );
+        }
+    }
+
     /**
      * @return iterable<\SplFileInfo>
      */

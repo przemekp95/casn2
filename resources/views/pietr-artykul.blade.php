@@ -12,7 +12,7 @@
 
                     <div class="article-meta mb-4">
                         <div class="d-flex align-items-center mb-3">
-                            <img src="{{ asset('public/images/Pietr.png') }}" alt="Wojciech Pietr"
+                            <img src="{{ asset('images/Pietr.png') }}" alt="Wojciech Pietr"
                                  class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover;">
                             <div>
                                 <h5 class="mb-0">Wojciech Pietr</h5>
@@ -39,7 +39,7 @@
                         <h3>Informacje o autorze</h3>
                         <div class="author-bio p-4 bg-light rounded">
                             <div class="d-flex align-items-start">
-                                <img src="{{ asset('public/images/Pietr.png') }}" alt="Wojciech Pietr"
+                                <img src="{{ asset('images/Pietr.png') }}" alt="Wojciech Pietr"
                                      class="rounded-circle me-3" style="width: 80px; height: 80px; object-fit: cover;">
                                 <div>
                                     <h5>Wojciech Pietr</h5>
